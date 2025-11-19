@@ -1,0 +1,2489 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- 1. CSS 먼저 -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+
+    <!-- 2. JS 라이브러리 로딩 (순서 주의) -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- 페이드 슬라이드 -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick-theme.min.css" rel="stylesheet"/>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.css" rel="stylesheet"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+    <!-- AOS 불러오기 -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <!-- 3. 사용자 스크립트는 맨 마지막에 defer로 -->
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header class="header">
+        <div class="menu-right">
+            <div>
+                <a href="#">
+                    <img src="https://www.etude.com/wp-content/uploads/2023/05/img_logo2023-1.png" alt="logo">
+                </a>
+            </div>
+
+            <nav class="menu-box-1">
+                <ul class="menu-1">
+                    <li>
+                        <a href="#">
+                            <span>PRODUCT</span>
+                        </a>
+
+                        <ul>
+                            <li>
+                                <ul>
+                                    <li>
+                                        <ul>
+                                            <li><a href="#">신제품
+                                                    <img src="https://www.etude.com/wp-content/uploads/2022/06/icon-ham-arrow.svg"
+                                                        alt="arrow">
+                                                </a></li>
+                                            <li><a href="#">전체보기
+                                                    <img src="https://www.etude.com/wp-content/uploads/2022/06/icon-ham-arrow.svg"
+                                                        alt="arrow">
+                                                </a></li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <ul>
+                                            <li><a href="#">아이</a></li>
+                                            <li><a href="#">전체</a></li>
+                                            <li><a href="#">싱글섀도우</a></li>
+                                            <li><a href="#">아이팔레트</a></li>
+                                            <li><a href="#">마스카라</a></li>
+                                            <li><a href="#">아이라이너</a></li>
+                                            <li><a href="#">아이브라우</a></li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <ul>
+                                            <li><a href="#">립</a></li>
+                                            <li><a href="#">전체</a></li>
+                                            <li><a href="#">립스틱</a></li>
+                                            <li><a href="#">틴트</a></li>
+                                            <li><a href="#">글로스</a></li>
+                                            <li><a href="#">립펜슬</a></li>
+                                            <li><a href="#">립케어</a></li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <ul>
+                                            <li><a href="#">페이스</a></li>
+                                            <li><a href="#">전체</a></li>
+                                            <li><a href="#">베이스·프라이머</a></li>
+                                            <li><a href="#">쿠션·파운데이션</a></li>
+                                            <li><a href="#">BB·컨실러</a></li>
+                                            <li><a href="#">팩트·파우더</a></li>
+                                            <li><a href="#">컨투어링·하이라이터</a></li>
+                                            <li><a href="#">블러셔</a></li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <ul>
+                                            <li><a href="#">네일</a></li>
+                                            <li><a href="#">전체</a></li>
+                                            <li><a href="#">네일컬러</a></li>
+                                            <li><a href="#">네일케어</a></li>
+                                            <li><a href="#">네일리무버</a></li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <ul>
+                                            <li><a href="#">스킨케어</a></li>
+                                            <li><a href="#">전체</a></li>
+                                            <li><a href="#">토너·패드</a></li>
+                                            <li><a href="#">에멀전</a></li>
+                                            <li><a href="#">에센스·세럼</a></li>
+                                            <li><a href="#">크림·밤</a></li>
+                                            <li><a href="#">미스트</a></li>
+                                            <li><a href="#">선케어</a></li>
+                                            <li><a href="#">세트</a></li>
+                                            <li><a href="#">기타</a></li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <ul>
+                                            <li><a href="#">마스크·팩</a></li>
+                                            <li><a href="#">전체</a></li>
+                                            <li><a href="#">시트마스크</a></li>
+                                            <li><a href="#">페이셜팩</a></li>
+                                            <li><a href="#">패치</a></li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <ul>
+                                            <li><a href="#">클렌저</a></li>
+                                            <li><a href="#">전체</a></li>
+                                            <li><a href="#">페이셜 클렌징</a></li>
+                                            <li><a href="#">메이크업 클렌징</a></li>
+                                            <li><a href="#">필링·스크럽</a></li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <ul>
+                                            <li><a href="#">바디</a></li>
+                                            <li><a href="#">전체</a></li>
+                                            <li><a href="#">워시</a></li>
+                                            <li><a href="#">보습</a></li>
+                                            <li><a href="#">핸드·풋</a></li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <ul>
+                                            <li><a href="#">헤어</a></li>
+                                            <li><a href="#">전체</a></li>
+                                            <li><a href="#">컬러·스타일링</a></li>
+                                            <li><a href="#">헤어케어</a></li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <ul>
+                                            <li><a href="#">툴</a></li>
+                                            <li><a href="#">전체</a></li>
+                                            <li><a href="#">브러쉬</a></li>
+                                            <li><a href="#">퍼프</a></li>
+                                            <li><a href="#">화장솜·면봉</a></li>
+                                            <li><a href="#">속눈썹·브라우</a></li>
+                                            <li><a href="#">공용기</a></li>
+                                            <li><a href="#">헤어도구</a></li>
+                                            <li><a href="#">기타</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span>BRAND</span>
+                        </a>
+
+                        <ul>
+                            <li>
+                                <ul>
+                                    <li>
+                                        <ul>
+                                            <li><a href="#">About ETUDE</a></li>
+                                            <li><a href="#">뷰티즌</a></li>
+                                            <li><a href="#">지구를 위한 활동</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li><a href="#"><span>MAKEUP LOOK</span></a></li>
+                    <li><a href="#"><span>STORE</span></a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <div class="icon-box">
+            <div class="search">
+                <img src="https://www.etude.com/wp-content/uploads/2022/04/icon-gnb-search.svg" alt="">
+
+                <div>
+                    <div class="search-popup">
+                        <div class="search-logo">
+                            <a href="#">
+                                <img src="./imgs/에뛰드/img_logo2023-1.png" alt="">
+                            </a>
+                            
+                            <div>
+                                <img src="https://www.etude.com/wp-content/uploads/2022/05/icon-gnb-close.svg" alt="">
+                            </div>
+                        </div>
+    
+                        <div class="search-title">
+                            <div>
+                                <h2>Search For Products</h2>
+                            </div>
+                        </div>
+    
+                        <div class="search-input">
+                            <input type="search" value="" placeholder="#립케어 강자! 진저슈가" autocomplete="off">
+                        </div>
+    
+                        <nav class="search-menu-box">
+                            <div>
+                                <span>TREND</span>
+                                <span>#TAG</span>
+                            </div>
+    
+                            <ul>
+                                <li><a href="#">신제품 모아보기</a></li>
+                                <li><a href="#">진저슈가</a></li>
+                                <li><a href="#">플레이 컬러 아이즈</a></li>
+                                <li><a href="#">순정</a></li>
+                                <li><a href="#">비건</a></li>
+                                <li><a href="#">픽싱틴트</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+
+            <div class="toggle-btn">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </header>
+
+    <section class="Dropdown-1">
+        <nav class="Dropdown-menu-box-1">
+            <ul class="Dropdown-menu-1">
+                <li>
+                    <a href="#"><span>BRAND</span></a>
+                    <ul>
+                        <li><a href="#">About ETUDE
+                                <img src="https://www.etude.com/wp-content/uploads/2022/06/icon-ham-arrow.svg"
+                                    alt="arrow"></a></li>
+                        <li><a href="#">뷰티즌
+                                <img src="https://www.etude.com/wp-content/uploads/2022/06/icon-ham-arrow.svg"
+                                    alt="arrow"></a></li>
+                        <li><a href="#">지구를 위한 활동
+                                <img src="https://www.etude.com/wp-content/uploads/2022/06/icon-ham-arrow.svg"
+                                    alt="arrow"></a></li>
+                    </ul>
+                </li>
+                <li><a href="#"><span>PRODUCT</span></a>
+                    <ul>
+                        <li><a href="#">신제품 모아보기
+                                <img src="https://www.etude.com/wp-content/uploads/2022/06/icon-ham-arrow.svg"
+                                    alt="arrow"></a></li>
+                        <li class="cate-center"><a href="#">카테고리</a></li>
+                        <li>
+                            <ul>
+                                <li><a href="#">전체</a></li>
+                                <li><a href="#">아이</a>
+                                    <ul>
+                                        <li><a href="#">전체</a></li>
+                                        <li><a href="#">싱글섀도우</a></li>
+                                        <li><a href="#">아이팔레트</a></li>
+                                        <li><a href="#">마스카라</a></li>
+                                        <li><a href="#">아이라이너</a></li>
+                                        <li><a href="#">아이브라우</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#">립</a>
+                                    <ul>
+                                        <li><a href="#">전체</a></li>
+                                        <li><a href="#">립스틱</a></li>
+                                        <li><a href="#">틴트</a></li>
+                                        <li><a href="#">글로스</a></li>
+                                        <li><a href="#">렙펜슬</a></li>
+                                        <li><a href="#">립케어</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#">페이스</a>
+                                    <ul>
+                                        <li><a href="#">전체</a></li>
+                                        <li><a href="#">베이스·프라이머</a></li>
+                                        <li><a href="#">쿠션·파운데이션</a></li>
+                                        <li><a href="#">BB·컨실러</a></li>
+                                        <li><a href="#">팩트·파우더</a></li>
+                                        <li><a href="#">컨투어링·하이라이터</a></li>
+                                        <li><a href="#">블러셔</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#">네일</a>
+                                    <ul>
+                                        <li><a href="#">전체</a></li>
+                                        <li><a href="#">네일컬러</a></li>
+                                        <li><a href="#">네일케어</a></li>
+                                        <li><a href="#">네일리무버</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#">스킨케어</a>
+                                    <ul>
+                                        <li><a href="#">전체</a></li>
+                                        <li><a href="#">토너·패드</a></li>
+                                        <li><a href="#">에멀전</a></li>
+                                        <li><a href="#">에센스·세럼</a></li>
+                                        <li><a href="#">크림·밤</a></li>
+                                        <li><a href="#">미스트</a></li>
+                                        <li><a href="#">선케어</a></li>
+                                        <li><a href="#">세트</a></li>
+                                        <li><a href="#">기타</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#">마스크·팩</a>
+                                    <ul>
+                                        <li><a href="#">전체</a></li>
+                                        <li><a href="#">시트마스크</a></li>
+                                        <li><a href="#">페이셜팩</a></li>
+                                        <li><a href="#">패치</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#">클렌저</a>
+                                    <ul>
+                                        <li><a href="#">전체</a></li>
+                                        <li><a href="#">페이셜 클렌징</a></li>
+                                        <li><a href="#">메이크업 클렌징</a></li>
+                                        <li><a href="#">필링·스크럽</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#">바디</a>
+                                    <ul>
+                                        <li><a href="#">전체</a></li>
+                                        <li><a href="#">워시</a></li>
+                                        <li><a href="#">보습</a></li>
+                                        <li><a href="#">핸드·풋</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#">헤어</a>
+                                    <ul>
+                                        <li><a href="#">전체</a></li>
+                                        <li><a href="#">컬러·스타일링</a></li>
+                                        <li><a href="#">헤어케어</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#">툴</a>
+                                    <ul>
+                                        <li><a href="#">전체</a></li>
+                                        <li><a href="#">브러쉬</a></li>
+                                        <li><a href="#">퍼프</a></li>
+                                        <li><a href="#">화장솜·면봉</a></li>
+                                        <li><a href="#">속눈썹·브라우</a></li>
+                                        <li><a href="#">공용기</a></li>
+                                        <li><a href="#">헤어도구</a></li>
+                                        <li><a href="#">기타</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li><a href="#"><span>MAKEUP LOOK</span></a></li>
+                <li><a href="#"><span>@etudeofficial</span></a>
+                    <ul>
+                        <li><a href="#">Instagram
+                                <img src="https://www.etude.com/wp-content/uploads/2022/06/icon-ham-arrow.svg"
+                                    alt="arrow"></a></li>
+                        <li><a href="#">Tiktok
+                                <img src="https://www.etude.com/wp-content/uploads/2022/06/icon-ham-arrow.svg"
+                                    alt="arrow"></a></li>
+                    </ul>
+                </li>
+                <li><a href="#"><span>STORE</span></a>
+                    <ul>
+                        <li><a href="#">온라인
+                                <img src="https://www.etude.com/wp-content/uploads/2022/06/icon-ham-arrow.svg"
+                                    alt="arrow"></a></li>
+                        <li><a href="#">오프라인
+                                <img src="https://www.etude.com/wp-content/uploads/2022/06/icon-ham-arrow.svg"
+                                    alt="arrow"></a></li>
+                    </ul>
+                </li>
+                <li><a href="#"><span>CONTACT</span></a>
+                    <ul>
+                        <li><a href="#">공지사항
+                                <img src="https://www.etude.com/wp-content/uploads/2022/06/icon-ham-arrow.svg"
+                                    alt="arrow"></a></li>
+                        <li><a href="#">FAQ
+                                <img src="https://www.etude.com/wp-content/uploads/2022/06/icon-ham-arrow.svg"
+                                    alt="arrow"></a></li>
+                        <li><a href="#">고객문의
+                                <img src="https://www.etude.com/wp-content/uploads/2022/06/icon-ham-arrow.svg"
+                                    alt="arrow"></a></li>
+                    </ul>
+                </li>
+                <li><a href="#"><span>MEMBERSHIP</span></a>
+                    <ul>
+                        <li><a href="#">핑크멤버십
+                                <img src="https://www.etude.com/wp-content/uploads/2022/06/icon-ham-arrow.svg"
+                                    alt="arrow"></a></li>
+                        <li><a href="#">뷰티포인트
+                                <img src="https://www.etude.com/wp-content/uploads/2022/06/icon-ham-arrow.svg"
+                                    alt="arrow"></a></li>
+                    </ul>
+                </li>
+                <li><a href="#"><span>뽀오얀</span></a>
+                    <ul>
+                        <li><a href="#">About 뽀오얀
+                                <img src="https://www.etude.com/wp-content/uploads/2022/06/icon-ham-arrow.svg"
+                                    alt="arrow"></a></li>
+                        <li><a href="#">제품보기
+                                <img src="https://www.etude.com/wp-content/uploads/2022/06/icon-ham-arrow.svg"
+                                    alt="arrow"></a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+
+        <div class="shopping">
+            <span>네이버 브랜드 스토어</span>
+            <nav>
+                <ul>
+                    <li><a href="#">네이버 브랜드 스토어</a></li>
+                    <li><a href="#">올리브영 브랜드관</a></li>
+                    <li><a href="#">아모레몰 브랜드관</a></li>
+                    <li><a href="#">ETUDE GLOBAL MALL</a></li>
+                </ul>
+            </nav>
+        </div>
+    </section>
+
+    <section class="Dropdown_mb">
+        <div>
+            <div class="search-input-mb">
+                <input type="search" value="" placeholder="#립케어 강자! 진저슈가" autocomplete="off">
+            </div>
+        </div>
+    
+        <nav class="search-menu">
+            <ul>
+                <li class="active">
+                    <span>MENU</span>
+                </li>
+                <li>
+                    <span>CATEGORY</span>
+                </li>
+            </ul>
+            <div class="tap">
+                <div class='search-menu-box-2 active'>
+                    <div class="search-menu-2">
+                        <ul>
+                            <li><a href="#">BRAND</a>
+                                <ul>
+                                    <li><a href="#">About ETUDE</a></li>
+                                    <li><a href="#">뷰티즌</a></li>
+                                    <li><a href="#">지구를 위한 활동</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">PRODUCK</a>
+                                <ul>
+                                    <li><a href="#">신제품</a></li>
+                                    <li><a href="#">카테고리</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">MAKEUP LOOK</a></li>
+                            <li><a href="#">@etudeofficial</a>
+                                <ul>
+                                    <li><a href="#">Instagram</a></li>
+                                    <li><a href="#">Tiktok</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">STORE</a>
+                                <ul>
+                                    <li><a href="#">온라인</a></li>
+                                    <li><a href="#">오프라인</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">CONTACT</a>
+                                <ul>
+                                    <li><a href="#">고객사항</a></li>
+                                    <li><a href="#">FAQ</a></li>
+                                    <li><a href="#">고객문의</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">MEMBERSHIP</a>
+                                <ul>
+                                    <li><a href="#">핑크멤버쉽</a></li>
+                                    <li><a href="#">뷰티포인트</a></li>
+                                    <li><a href="#">고객문의</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">뽀오얀</a>
+                                <ul>
+                                    <li><a href="#">About뽀오얀</a></li>
+                                    <li><a href="#">제품보기</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+        
+                    <div class="shopping-mb">
+                        <span>네이버 브랜드 스토어</span>
+                        <nav>
+                            <ul>
+                                <li><a href="#">네이버 브랜드 스토어</a></li>
+                                <li><a href="#">올리브영 브랜드관</a></li>
+                                <li><a href="#">아모레몰 브랜드관</a></li>
+                                <li><a href="#">ETUDE GLOBAL MALL</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+    
+                <div class='search-menu-box-3'>
+                    <div class="search-menu-3">
+                        <ul>
+                            <li>
+                                <a href="#">신제품</a>
+                            </li>
+                            <li><a href="#">아이</a>
+                                <ul>
+                                    <li><a href="#">전체</a></li>
+                                    <li><a href="#">싱글섀도우</a></li>
+                                    <li><a href="#">아이팔레트</a></li>
+                                    <li><a href="#">마스카라</a></li>
+                                    <li><a href="#">아이라이너</a></li>
+                                    <li><a href="#">아이브라우</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">립</a>
+                                <ul>
+                                    <li><a href="#">전체</a></li>
+                                    <li><a href="#">립스틱</a></li>
+                                    <li><a href="#">틴트</a></li>
+                                    <li><a href="#">글로스</a></li>
+                                    <li><a href="#">립펜슬</a></li>
+                                    <li><a href="#">립케어</a></li>
+                                </ul></li>
+                            <li><a href="#">페이스</a>
+                                <ul>
+                                    <li><a href="#">전체</a></li>
+                                    <li><a href="#">베이스·프라이머</a></li>
+                                    <li><a href="#">쿠션·파운데이션</a></li>
+                                    <li><a href="#">BB·컨실러</a></li>
+                                    <li><a href="#">팩트·파우더</a></li>
+                                    <li><a href="#">컨투어링·하이라이터</a></li>
+                                    <li><a href="#">블러셔</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">네일</a>
+                                <ul>
+                                    <li><a href="#">전체</a></li>
+                                    <li><a href="#">네일컬러</a></li>
+                                    <li><a href="#">네일케어</a></li>
+                                    <li><a href="#">네일리무버</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">스킨케어</a>
+                                <ul>
+                                    <li><a href="#">전체</a></li>
+                                    <li><a href="#">토너·패드</a></li>
+                                    <li><a href="#">에멀전</a></li>
+                                    <li><a href="#">에센스·세럼</a></li>
+                                    <li><a href="#">크림·밤</a></li>
+                                    <li><a href="#">미스트</a></li>
+                                    <li><a href="#">선케어</a></li>
+                                    <li><a href="#">세트</a></li>
+                                    <li><a href="#">기타</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">마스크·팩</a>
+                                <ul>
+                                    <li><a href="#">전체</a></li>
+                                    <li><a href="#">시트마스크</a></li>
+                                    <li><a href="#">페이셜팩</a></li>
+                                    <li><a href="#">패치</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">클렌저</a>
+                                <ul>
+                                    <li><a href="#">전체</a></li>
+                                    <li><a href="#">페이셜 클린징</a></li>
+                                    <li><a href="#">메이크업 클렌징</a></li>
+                                    <li><a href="#">필링·스크럽</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">바디</a>
+                                <ul>    
+                                    <li><a href="#">전체</a></li>
+                                    <li><a href="#">워시</a></li>
+                                    <li><a href="#">보습</a></li>
+                                    <li><a href="#">핸드·풋</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">헤어</a>
+                                <ul>    
+                                    <li><a href="#">전체</a></li>
+                                    <li><a href="#">헤어케어</a></li>
+                                    <li><a href="#">컬러·스타일링</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">툴</a>
+                                <ul>    
+                                    <li><a href="#">전체</a></li>
+                                    <li><a href="#">브러쉬</a></li>
+                                    <li><a href="#">퍼프</a></li>
+                                    <li><a href="#">화장솜·면봉</a></li>
+                                    <li><a href="#">속눈썹·브라우</a></li>
+                                    <li><a href="#">공용기</a></li>
+                                    <li><a href="#">헤어도구</a></li>
+                                    <li><a href="#">기타</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </section>
+
+    <div class="top-btn">
+        <i class="fa-solid fa-chevron-up"></i>
+    </div>
+
+    <div class="plus-btn">
+    </div>
+    <div class="plus-bg">
+        <div>
+            <div class="plus-menu">
+                <div>
+                    <a href="#">
+                        <span>HOME</span>
+                        <div>
+                            <img src="./imgs/에뛰드/mo-menu-home.svg" alt="">
+                        </div>
+                    </a>
+                </div>
+                <div>
+                    <a href="#">
+                        <span>스토어</span>
+                        <div>
+                            <img src="./imgs/에뛰드/mo-menu-store.svg" alt="">
+                        </div>
+                    </a>
+                </div>
+                <div>
+                    <a href="#">
+                        <span>고객문의</span>
+                        <div>
+                            <img src="./imgs/에뛰드/mo-menu-qa.svg" alt="">
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <section class="section-1">
+        <div class="slideshow">
+            <div class="slider-1">
+                <div class="item">
+                    <div class="fade-up">
+                        <span>ETUDE X 마루는 강쥐</span>
+                        <span>마루가 로즈데이를 맞아 준비했어</span>
+                    </div>
+                    <img src="./imgs/에뛰드/main_1920x750_5.jpg"/>
+                    <img src="./imgs/에뛰드/자사메인배너_마루는강쥐_mo_03.jpg" alt="">
+                </div>
+                <div class="item">
+                    <div class="fade-up">
+                        <span>도촘하고 반짝이는 생기 입술</span>
+                        <span>NEW 슈가 컬러링 젤리밤</span>
+                    </div>
+                    <img src="./imgs/에뛰드/sugar_PC_1920x950.jpg"/>
+                    <img src="./imgs/에뛰드/sugar_main_MO.jpg" alt="">
+                </div>
+                <div class="item">
+                    <div class="fade-up">
+                        <span>(지그재그 단독) 베스트 듀오 단지밤</span>
+                        <span>너의 립은 내가 책임질게! 내 마음대로 짝꿍 매치</span>
+                    </div>
+                    <img src="./imgs/에뛰드/main_PC_1920x750.jpg"/>
+                    <img src="./imgs/에뛰드/main_MO_750x1624.jpg" alt="">
+                </div>
+                <div class="item">
+                    <div class="fade-up">
+                        <span>Balloon in cheek</span>
+                        <span>(올리브영)보송한 파우더에 생기 컬러 한 방울</span>
+                    </div>
+                    <img src="https://www.etude.com/wp-content/uploads/2025/04/main_balloon_1920x750jpg.jpg"/>
+                    <img src="https://www.etude.com/wp-content/uploads/2025/04/main_balloon_750x1624.jpg" alt="">
+                </div>
+                <div class="item">
+                    <div class="fade-up">
+                        <span>두 볼을 맑게 물들이는</span>
+                        <span>프루티 립앤치크 블러밤</span>
+                    </div>
+                    <img src="https://www.etude.com/wp-content/uploads/2025/03/fruity_Main_PC_1920x950.jpg"/>
+                    <img src="https://www.etude.com/wp-content/uploads/2025/03/fruity_Main_MO_750x1624.jpg" alt="">
+                </div>
+                <div class="item">
+                    <div class="fade-up">
+                        <span>What's in my eyes</span>
+                        <span>한 톤, 반 톤 컬러의 온도편차 </span>
+                    </div>
+                    <img src="https://www.etude.com/wp-content/uploads/2025/03/main_whatisin_1920x950.jpg"/>
+                    <img src="https://www.etude.com/wp-content/uploads/2025/03/main_whatisin_1920x950.jpg"/>
+                </div>
+                <div class="item">
+                    <div class="fade-up">
+                        <span>Sarr Sweet</span>
+                        <span>[올리브영 단독]달콤한 컬러에 퐁당! 녹아들 듯 사르르 당충천</span>
+                    </div>
+                    <img src="https://www.etude.com/wp-content/uploads/2025/01/1920x950_sarr.jpg"/>
+                    <img src="https://www.etude.com/wp-content/uploads/2025/01/750x1624_sarr.jpg"/>
+                </div>
+                <div class="item">
+                    <div class="fade-up">
+                        <span>Milky Strawberry</span>
+                        <span>딸기에서 영감받은 새콤달콤 밀키베리 컬렉션</span>
+                    </div>
+                    <img src="https://www.etude.com/wp-content/uploads/2025/01/berry_PC_1920x950.jpg"/>
+                    <img src="https://www.etude.com/wp-content/uploads/2025/01/berry_main_MO.jpg"/>
+                </div>
+                <div class="item">
+                    <div class="fade-up">
+                        <span>My Own Gemstone</span>
+                        <span>우리가 태어난 그날의 메모리즈, 소망&기억의 탄생석 컬렉션</span>
+                    </div>
+                    <img src="https://www.etude.com/wp-content/uploads/2024/12/gemstone_PC.jpg"/>
+                    <img src="https://www.etude.com/wp-content/uploads/2024/12/gemstone_MO-1.jpg" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section-2">
+        <nav>
+        <ul>
+            <li>
+                <a href="#">
+                    <div>
+                        <img src="https://www.etude.com/wp-content/uploads/2022/07/fixingtint.png" alt="화장품 1">
+                    </div>
+                    <span>픽싱 틴트</span>
+                    <span>12,000원</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <div>
+                        <img src="https://www.etude.com/wp-content/uploads/2022/07/%EB%A6%BD%EB%A7%88%EC%8A%A4%ED%81%AC.png" alt="">
+                    </div>
+                    <span>진저 슈가 오버나이트 립 마스크</span>
+                    <span>11,000원</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <div>
+                        <img src="https://www.etude.com/wp-content/uploads/2023/03/curlfix2023_black.png" alt="">
+                    </div>
+                    <span>컬 픽스 마스카라</span>
+                    <span>16,000원</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <div>
+                        <img src="https://www.etude.com/wp-content/uploads/2022/07/0137-Contour_Powder-9.png" alt="">
+                    </div>
+                    <span>그림자 쉐딩</span>
+                    <span>20,000원</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <div>
+                        <img src="https://www.etude.com/wp-content/uploads/2022/07/soonjung_moisture_sun_01.png" alt="">
+                    </div>
+                    <span>순정 디렉터 수분 선크림</span>
+                    <span>25,000원</span>
+                </a>
+            </li>
+        </ul>
+        </nav>
+    </section>
+
+    <section class="section-2-mb">
+        <div class="swiper mySwiper swiper-2">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <a href="#">
+                    <div>
+                        <img src="https://www.etude.com/wp-content/uploads/2022/07/fixingtint.png" alt="화장품 1">
+                    </div>
+                    <span>픽싱 틴트</span>
+                    <span>12,000원</span>
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a href="#">
+                    <div>
+                        <img src="https://www.etude.com/wp-content/uploads/2022/07/%EB%A6%BD%EB%A7%88%EC%8A%A4%ED%81%AC.png" alt="">
+                    </div>
+                    <span>진저 슈가 오버나이트 립 마스크</span>
+                    <span>11,000원</span>
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a href="#">
+                    <div>
+                        <img src="https://www.etude.com/wp-content/uploads/2023/03/curlfix2023_black.png" alt="">
+                    </div>
+                    <span>컬 픽스 마스카라</span>
+                    <span>16,000원</span>
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a href="#">
+                    <div>
+                        <img src="https://www.etude.com/wp-content/uploads/2022/07/0137-Contour_Powder-9.png" alt="">
+                    </div>
+                    <span>그림자 쉐딩</span>
+                    <span>20,000원</span>
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a href="#">
+                    <div>
+                        <img src="https://www.etude.com/wp-content/uploads/2022/07/soonjung_moisture_sun_01.png" alt="">
+                    </div>
+                    <span>순정 디렉터 수분 선크림</span>
+                    <span>25,000원</span>
+                </a>
+              </div>
+            </div>
+        </div>
+        <div class="swiper-scrollbar"></div>
+    </section>
+
+    <section class="section-3">    
+        <div class="makeup-look">
+            <div class="img-box-3">
+                <img src="https://www.etude.com/wp-content/uploads/2022/05/makeuplook-icon.png" alt="붓">
+            </div>
+
+            <div class="makeup-look-txt">
+                <span>Makeup Look</span>
+            </div>
+
+            <span class="makeup-look-txt-2">
+                지금 나에게 어울리는 메이크업 룩은?
+            </span>
+
+            <div class="more-btn">
+                <a href="#">
+                    <span>View More</span>
+                </a>
+            </div>
+        </div>
+
+        <div class="makeup-look-mb">
+            <div class="img-box-mb-3">
+                <img src="https://www.etude.com/wp-content/uploads/2022/05/makeuplook-icon.png" alt="붓">
+            </div>
+
+            <div class="makeup-look-txt-mb">
+                <span>Makeup Look</span>
+            </div>
+
+            <div class="makeup-look-txt-mb-2">
+                <a href="#">
+                    메이크업룩 전체보기
+                    <svg xmlns="http://www.w3.org/2000/svg" width="12" height="21" viewBox="0 0 20 21" fill="none"><g clip-path="url(#clip0_880_50759)"><path d="M5 1.5L14 10.5L5 19.5" stroke="#333333" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path></g><defs><clipPath id="clip0_880_50759"><rect width="20" height="20" fill="white" transform="translate(0 0.5)"></rect></clipPath></defs></svg>
+                </a>
+            </div>
+        </div>
+
+        <div class="img-box-h">
+            <a href="#">
+                <img src="https://www.etude.com/wp-content/uploads/2025/04/balloon_makeup_main.jpg" alt="">
+            </a>
+        </div>
+
+        <div class="balloon-txt" data-aos="fade-down" data-aos-duration="1200">
+            <img src="https://www.etude.com/wp-content/uploads/2025/04/makeup_look_main_title_balloon.png" alt="">
+        </div>
+
+        <ul class="balloon-img-box">
+            <li>
+                <a href="#">
+                    <img src="https://www.etude.com/wp-content/uploads/2025/04/makeup_look_main_prd1_balloon.jpg" alt="">
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <img src="https://www.etude.com/wp-content/uploads/2025/04/makeup_look_main_prd2_balloon.jpg" alt="">
+                </a>
+            </li>
+        </ul>
+
+        <div class="swiper mySwiper swiper-3">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <a href="#">
+                    <img src="https://www.etude.com/wp-content/uploads/2025/04/makeup_look_main_prd1_balloon.jpg" alt="">
+                </a>
+              </div>
+
+              <div class="swiper-slide">
+                <a href="#">
+                    <img src="https://www.etude.com/wp-content/uploads/2025/04/makeup_look_main_prd2_balloon.jpg" alt="">
+                </a>
+              </div>
+            </div>
+    </section>
+
+    <section class="section-4">
+        <div class="soon-jung">
+            <div class="img-box-4">
+                <img src="https://www.etude.com/wp-content/uploads/2022/05/playwithetude-icon.png" alt="열기구">
+            </div>
+
+            <div class="soon-jung-txt">
+                <span>SOON JUNG</span>
+            </div>
+
+            <span class="soon-jung-txt-2">
+                30년 History, 저자극 검증 System
+            </span>
+
+            <div class="more-btn">
+                <a href="#">
+                    <span>View More</span>
+                </a>
+            </div>
+        </div>
+
+        <div class="img-box-h-4">
+            <div class="h-4-left">
+            </div>
+
+            <div class="h-4-right">
+                <ul>
+                    <li>
+                        <a href="#">
+                            <img src="https://www.etude.com/wp-content/uploads/2023/06/%EC%97%B0%EC%B6%9C%EC%BB%B7_02-3-800x800.jpg" alt="">
+                            <img src="https://www.etude.com/wp-content/uploads/2023/06/THN_soonjung-2x-barrier-intensive-cream.jpg" alt="">
+                        </a>
+
+                        <div>
+                            <div>
+                                <div>
+                                    <span>#보습크림</span>
+                                    <span>#순정</span>
+                                </div>
+
+                                <a href="#">
+                                    순정 2x 베리어 보습 크림 60ml
+                                </a>
+                            </div>
+
+                            <div>
+                                <span>17,000</span>
+                                <span>원</span>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li>
+                        <a href="#">
+                            <img src="https://www.etude.com/wp-content/uploads/2023/06/%EC%A0%9C%ED%92%88%EC%BB%B7_02-800x800.jpg" alt="">
+                            <img src="https://www.etude.com/wp-content/uploads/2023/06/THN_soonjung-cica-calming-ampoule-essence.jpg" alt="">
+                        </a>
+
+                        <div>
+                            <div>
+                                <div>
+                                    <span>#순정</span>
+                                    <span>#엠플에센스</span>
+                                </div>
+
+                                <a href="#">
+                                    순정 시카 카밍 앰플 에센스 50ml
+                                </a>
+                            </div>
+
+                            <div>
+                                <span>29,000</span>
+                                <span>원</span>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+
+                <ul>
+                    <li>
+                        <a href="#">
+                            <img src="https://www.etude.com/wp-content/uploads/2023/06/%EC%97%B0%EC%B6%9C%EC%BB%B7_02-2-800x800.jpg" alt="">
+                            <img src="https://www.etude.com/wp-content/uploads/2023/06/%EB%AA%A8%EB%8D%B8%EC%BB%B7_03-1-2-800x800.jpg" alt="">
+                        </a>
+
+                        <div>
+                            <div>
+                                <div>
+                                    <span>#순정</span>
+                                    <span>#약산성</span>
+                                    <span>#폼클렌징</span>
+                                </div>
+
+                                <a href="#">
+                                    순정 약산성 5.5 폼 클렌저 150ml
+                                </a>
+                            </div>
+
+                            <div>
+                                <span>12,000</span>
+                                <span>원</span>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li>
+                        <a href="#">
+                            <img src="https://www.etude.com/wp-content/uploads/2023/06/%EC%97%B0%EC%B6%9C%EC%BB%B7_02-800x800.jpg" alt="">
+                            <img src="https://www.etude.com/wp-content/uploads/2023/06/%EB%AA%A8%EB%8D%B8%EC%BB%B7_04-1-800x800.jpg" alt="">
+                        </a>
+
+                        <div>
+                            <div>
+                                <div>
+                                    <span>#수분크림</span>
+                                    <span>#순정</span>
+                                </div>
+
+                                <a href="#">
+                                    순정 수분 베리어 크림 75ml
+                                </a>
+                            </div>
+
+                            <div>
+                                <span>22,000</span>
+                                <span>원</span>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+
+                <ul>
+                    <li class="thumbnail">
+                        <a href="#">
+                            <img src="https://www.etude.com/wp-content/uploads/2023/06/%EC%97%B0%EC%B6%9C%EC%BB%B7_02-1-800x800.jpg" alt="">
+                            <img src="https://www.etude.com/wp-content/uploads/2023/06/%EB%AA%A8%EB%8D%B8%EC%BB%B7_03-1-1-800x800.jpg" alt="">
+                        </a>
+
+                        <div>
+                            <div>
+                                <div>
+                                    <span>#순정</span>
+                                    <span>#약산성</span>
+                                </div>
+
+                                <a href="#">
+                                    순정 약산성 6.5 휩 클렌저 150ml
+                                </a>
+                            </div>
+
+                            <nav>
+                                <ul>
+                                    <li>
+                                        <div>
+                                            <img src="https://www.etude.com/wp-content/uploads/2023/06/%ED%9C%A9%ED%81%B4%EB%A0%8C%EC%A0%80_150ml.png" alt="">
+                                        </div>
+                                    </li>
+
+                                    <li>
+                                        <div>
+                                            <img src="https://www.etude.com/wp-content/uploads/2023/06/%ED%9C%A9%ED%81%B4%EB%A0%8C%EC%A0%80_350ml.png" alt="">
+                                        </div>
+                                    </li>
+
+                                    <li>
+                                        <div>
+                                            <img src="https://www.etude.com/wp-content/uploads/2023/06/%ED%9C%A9%ED%81%B4%EB%A0%8C%EC%A0%80_re_150ml.png" alt="">
+                                        </div>
+                                    </li>
+                                </ul>
+                            </nav>
+
+                            <div>
+                                <span>11,000</span>
+                                <span>원 –</span>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="thumbnail">
+                        <a href="#">
+                            <img src="https://www.etude.com/wp-content/uploads/2023/03/0317_Soonjung_Toner_01-768x768.jpg" alt="">
+                            <img src="https://www.etude.com/wp-content/uploads/2023/06/THN_soonjung-Toner-800x800.jpg" alt="">
+                        </a>
+
+                        <div>
+                            <div>
+                                <div>
+                                    <span>#순정</span>
+                                    <span>#약산성</span>
+                                </div>
+
+                                <a href="#">
+                                    순정 약산성 5.5 진정 토너
+                                </a>
+                            </div>
+
+                            <nav>
+                                <ul>
+                                    <li>
+                                        <div>
+                                            <img src="https://www.etude.com/wp-content/uploads/2023/03/200ml_re.png" alt="">
+                                        </div>
+                                    </li>
+
+                                    <li>
+                                        <div>
+                                            <img src="https://www.etude.com/wp-content/uploads/2023/03/350ml.png" alt="">
+                                        </div>
+                                    </li>
+
+                                    <li>
+                                        <div>
+                                            <img src="https://www.etude.com/wp-content/uploads/2023/03/500ml.png" alt="">
+                                        </div>
+                                    </li>
+                                </ul>
+                            </nav>
+
+
+                            <div>
+                                <span>12,000</span>
+                                <span>원 –</span>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section class="section-4-mb">
+        <div class="soon-mb-txt">
+            <h2>SOON JUNG</h2>
+
+            <p>30년 History,저자극 검증 System</p>
+        </div>
+
+        <div class="swiper mySwiper swiper-4">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div>
+                    <div class="img-4">
+                        <img src="https://www.etude.com/wp-content/uploads/2023/06/%EC%97%B0%EC%B6%9C%EC%BB%B7_02-3-800x800.jpg" alt="">
+                    </div>
+
+                    <div class="soon-box">
+                        <div>
+                            <span>#보습크림</span>
+                            <span>#순정</span>
+                        </div>
+
+                        <div>
+                            <a href="#">순정 2x 베리어 보습 크림
+                                <br>
+                                60ml</a>
+                        </div>
+
+                        <div>
+                            <span>17,000</span>
+                            <span>원</span>
+                        </div>
+                    </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div>
+                    <div class="img-4">
+                        <img src="https://www.etude.com/wp-content/uploads/2023/06/%EC%A0%9C%ED%92%88%EC%BB%B7_02-800x800.jpg" alt="">
+                    </div>
+
+                    <div class="soon-box">
+                        <div>
+                            <span>#보습크림</span>
+                            <span>#순정</span>
+                        </div>
+
+                        <div>
+                            <a href="#">순정 시카 카밍 앰플 에센스
+                                <br>
+                                50ml</a>
+                        </div>
+
+                        <div>
+                            <span>17,000</span>
+                            <span>원</span>
+                        </div>
+                    </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div>
+                    <div class="img-4">
+                        <img src="https://www.etude.com/wp-content/uploads/2023/06/%EC%97%B0%EC%B6%9C%EC%BB%B7_02-2-800x800.jpg" alt="">
+                    </div>
+
+                    <div class="soon-box">
+                        <div>
+                            <span>#순정</span>
+                            <span>#앰플에센스</span>
+                        </div>
+
+                        <div>
+                            <a href="#">순정 약산성 5.5폼 클렌저
+                                <br>
+                                150ml</a>
+                        </div>
+
+                        <div>
+                            <span>29,000</span>
+                            <span>원</span>
+                        </div>
+                    </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div>
+                    <div class="img-4">
+                        <img src="https://www.etude.com/wp-content/uploads/2023/06/%EC%97%B0%EC%B6%9C%EC%BB%B7_02-3-800x800.jpg" alt="">
+                    </div>
+
+                    <div class="soon-box">
+                        <div>
+                            <span>#순정</span>
+                            <span>#약산성</span>
+                            <span>#폼클렌징</span>
+                        </div>
+
+                        <div>
+                            <a href="#">순정 수분 베리어 크림 75ml</a>
+                        </div>
+
+                        <div>
+                            <span>12,000</span>
+                            <span>원</span>
+                        </div>
+                    </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div>
+                    <div class="img-4">
+                        <img src="https://www.etude.com/wp-content/uploads/2023/06/%EC%97%B0%EC%B6%9C%EC%BB%B7_02-1-800x800.jpg" alt="">
+                    </div>
+
+                    <div class="soon-box">
+                        <div>
+                            <span>#수분크림</span>
+                            <span>#순정</span>
+                        </div>
+
+                        <div>
+                            <a href="#">순정 약산성 6.5휩 클렌저
+                                <br>150ml
+                            </a>
+                        </div>
+
+                        <ul>
+                            <li>
+                                <div>
+                                    <img src="https://www.etude.com/wp-content/uploads/2023/06/%ED%9C%A9%ED%81%B4%EB%A0%8C%EC%A0%80_150ml.png" alt="">
+                                </div>
+                            </li>
+    
+                            <li>
+                                <div>
+                                    <img src="https://www.etude.com/wp-content/uploads/2023/06/%ED%9C%A9%ED%81%B4%EB%A0%8C%EC%A0%80_350ml.png" alt="">
+                                </div>
+                            </li>
+    
+                            <li>
+                                <div>
+                                    <img src="https://www.etude.com/wp-content/uploads/2023/06/%ED%9C%A9%ED%81%B4%EB%A0%8C%EC%A0%80_re_150ml.png" alt="">
+                                </div>
+                            </li>
+                        </ul>
+
+                        <div>
+                            <span>22,000</span>
+                            <span>원</span>
+                        </div>
+                    </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-scrollbar"></div>
+          </div>
+    </section>
+    
+    <section class="section-6-mb">
+        <div class="new-title">
+            <div class="new-1">
+                <img src="https://www.etude.com/wp-content/uploads/2022/07/whatsnew-icon.svg" alt="붓">
+            </div>
+
+            <div class="new-txt-mb">
+                <span>What’s New</span>
+            </div>
+
+            <div class="new-txt-mb-2">
+                <a href="#">
+                    신상품 전체 보기
+                    <svg xmlns="http://www.w3.org/2000/svg" width="12" height="21" viewBox="0 0 20 21" fill="none"><g clip-path="url(#clip0_880_50759)"><path d="M5 1.5L14 10.5L5 19.5" stroke="#333333" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path></g><defs><clipPath id="clip0_880_50759"><rect width="20" height="20" fill="white" transform="translate(0 0.5)"></rect></clipPath></defs></svg>
+                </a>
+            </div>
+        </div>
+
+        <div class="swiper mySwiper swiper-6-mb">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div>
+                    <a href="#" class="img-6">
+                        <img src="https://www.etude.com/wp-content/uploads/2025/06/sebum_jelly_powder_02-800x800.jpg" alt="">
+                    </a>
+
+                    <div class="new-box">
+                        <div>
+                            <span>#개기름치트키</span>
+                            <span>#기름종이파우더</span>
+                        </div>
+
+                        <div>
+                            <a href="#">피지쏙 젤리 파우더 8g</a>
+                        </div>
+
+                        <div>
+                            <span>15,000</span>
+                            <span>원</span>
+                        </div>
+                    </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div>
+                    <a href="#" class="img-6">
+                        <img src="https://www.etude.com/wp-content/uploads/2022/07/sebum_pact_02-800x800.jpg" alt="">
+                    </a>
+
+                    <div class="new-box">
+                        <div>
+                            <span>#유수분밸런스</span>
+                            <span>#자연스러운</span>
+                        </div>
+
+                        <div>
+                            <a href="#">피지쏙 팩트 9.5g</a>
+                        </div>
+
+                        <div>
+                            <span>14,000</span>
+                            <span>원</span>
+                        </div>
+                    </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div>
+                    <a href="#" class="img-6">
+                        <img src="https://www.etude.com/wp-content/uploads/2022/07/sebum_powder_02-800x800.jpg" alt="">
+                    </a>
+
+                    <div class="new-box">
+                        <div>
+                            <span>#미세파우더</span>
+                            <span>#블러링</span>
+                        </div>
+
+                        <div>
+                            <a href="#">피지쏙 파우더 5g</a>
+                        </div>
+
+                        <div>
+                            <span>10,000</span>
+                            <span>원</span>
+                        </div>
+                    </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div>
+                    <a href="#" class="img-6">
+                        <img src="https://www.etude.com/wp-content/uploads/2025/04/PRD_TH02-1-800x800.jpg" alt="">
+                    </a>
+
+                    <div class="new-box">
+                        <div>
+                            <span>#마루는강쥐</span>
+                            <span>#싱글섀도우</span>
+                        </div>
+
+                        <div>
+                            <a href="#">와츠인 마이 아이즈
+                                <br>#마루는 강쥐 2g
+                            </a>
+                        </div>
+
+                        <ul>
+                            <li>
+                                <div>
+                                    <img src="https://www.etude.com/wp-content/uploads/2025/04/CT_%EA%BC%AC%EC%88%9C%EB%82%B4%EC%95%A0%EC%B0%A9%EC%9D%B8%ED%98%95.jpg" alt="">
+                                </div>
+                            </li>
+    
+                            <li>
+                                <div>
+                                    <img src="https://www.etude.com/wp-content/uploads/2025/04/CT_%EC%95%84%EB%A5%B4%EB%A5%B4%EB%A7%88%EB%A3%A8.jpg" alt="">
+                                </div>
+                            </li>
+    
+                            <li>
+                                <div>
+                                    <img src="https://www.etude.com/wp-content/uploads/2025/04/CT_%EC%9D%98%EB%A6%AC%EA%B3%B5%EC%A3%BC%EB%93%B1%EC%9E%A5.jpg" alt="">
+                                </div>
+                            </li>
+
+                            <li>
+                                <div>
+                                    <img src="https://www.etude.com/wp-content/uploads/2025/04/CT_%ED%86%A0%EC%88%9C%ED%95%91%ED%81%AC.jpg" alt="">
+                                </div>
+                            </li>
+                        </ul>
+
+                        <div>
+                            <span>6,000</span>
+                            <span>원</span>
+                        </div>
+                    </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div>
+                    <a href="#" class="img-6 none">
+                        <img src="https://www.etude.com/wp-content/uploads/2025/05/PRD_TH01-800x800.jpg" alt="">
+                    </a>
+
+                    <div class="new-box">
+                        <div>
+                            <span>#마루는강쥐</span>
+                            <span>#올인원팔레트</span>
+                        </div>
+
+                        <div>
+                            <a href="#">플레이 멀티 팔레트
+                                <br>마루는 강쥐 7.5g
+                            </a>
+                        </div>
+
+                        <div>
+                            <span>22,000</span>
+                            <span>원</span>
+                        </div>
+                    </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-scrollbar"></div>
+          </div>
+    </section>  
+
+    <div class="line"></div>
+
+    <section class="section-5">
+        <div class="gift">
+            <div class="img-box-5">
+                <img src="https://www.etude.com/wp-content/uploads/elementor/thumbs/forgift-icon-ps1hnfogina127refuj865f0o1p841ejomeeg3hbm2.png" alt="붓">
+            </div>
+
+            <div class="gift-txt">
+                <span>For Gift</span>
+            </div>
+
+            <span class="gift-txt-2">
+                무슨 선물할까 고민하지 말고 에뛰드 카카오톡 선물하기로 바로가기
+            </span>
+
+            <div class="more-btn">
+                <a href="#">
+                    <span>View More</span>
+                </a>
+            </div>
+        </div>
+
+        <ul class="gift-menu">
+            <li>
+                <a href="#">
+                    <img src="https://www.etude.com/wp-content/uploads/2023/11/main_forgift_03.webp" alt="">
+                </a>
+            </li>
+
+            <li>
+                <a href="#">
+                    <img src="https://www.etude.com/wp-content/uploads/2022/07/EM01_002_main_forGift_03_playTone_set.jpg" alt="">
+                </a>
+            </li>
+
+            <li>
+                <a href="#">
+                    <img src="https://www.etude.com/wp-content/uploads/2022/10/main_forGift_contour_powder.jpg" alt="">
+                </a>
+            </li>
+
+            <li>
+                <a href="#">
+                    <img src="https://www.etude.com/wp-content/uploads/2022/07/EM01_002_main_forGift_02_soonjungTravel_set.jpg" alt="">
+                </a>
+            </li>
+        </ul>
+
+        <div class="swiper mySwiper swiper-5">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <a href="#">
+                    <img src="https://www.etude.com/wp-content/uploads/2023/11/main_forgift_03.webp" alt="">
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a href="#">
+                    <img src="https://www.etude.com/wp-content/uploads/2022/07/EM01_002_main_forGift_03_playTone_set.jpg" alt="">
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a href="#">
+                    <img src="https://www.etude.com/wp-content/uploads/2022/10/main_forGift_contour_powder.jpg" alt="">
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a href="#">
+                    <img src="https://www.etude.com/wp-content/uploads/2022/07/EM01_002_main_forGift_02_soonjungTravel_set.jpg" alt="">
+                </a>
+              </div>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+          </div>
+
+        <div class="gift-mb">
+            <div class="gift-title">
+                <div class="gift-1">
+                    <img src="https://www.etude.com/wp-content/uploads/elementor/thumbs/forgift-icon-ps1hnfogina127refuj865f0o1p841ejomeeg3hbm2.png" alt="붓">
+                </div>
+    
+                <div class="gift-txt-mb">
+                    <span>For Gift</span>
+                </div>
+    
+                <div class="gift-txt-mb-2">
+                    <a href="#">
+                        카카오톡 선물하기
+                        <svg xmlns="http://www.w3.org/2000/svg" width="12" height="21" viewBox="0 0 20 21" fill="none"><g clip-path="url(#clip0_880_50759)"><path d="M5 1.5L14 10.5L5 19.5" stroke="#333333" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path></g><defs><clipPath id="clip0_880_50759"><rect width="20" height="20" fill="white" transform="translate(0 0.5)"></rect></clipPath></defs></svg>
+                    </a>
+                </div>
+            </div>
+
+            <div class="swiper mySwiper swiper-5-mb">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <a href="#">
+                        <img src="https://www.etude.com/wp-content/uploads/2023/11/main_forgift_03.webp" alt="">
+                    </a>
+                  </div>
+                  <div class="swiper-slide">
+                    <a href="#">
+                        <img src="https://www.etude.com/wp-content/uploads/2022/07/EM01_002_main_forGift_03_playTone_set.jpg" alt="">
+                    </a>
+                  </div>
+                  <div class="swiper-slide">
+                    <a href="#">
+                        <img src="https://www.etude.com/wp-content/uploads/2022/10/main_forGift_contour_powder.jpg" alt="">
+                    </a>
+                  </div>
+                  <div class="swiper-slide">
+                    <a href="#">
+                        <img src="https://www.etude.com/wp-content/uploads/2022/07/EM01_002_main_forGift_02_soonjungTravel_set.jpg" alt="">
+                    </a>
+                  </div>
+                </div>
+              </div>
+        </div>
+    </section>
+
+    <section class="section-6">
+        <div class="new">
+            <div class="img-box-6">
+                <img src="https://www.etude.com/wp-content/uploads/2022/05/whatsnew-icon.png" alt="붓">
+            </div>
+
+            <div class="new-txt">
+                <span>What’s New</span>
+            </div>
+
+            <span class="new-txt-2">
+                주목! 신상이 궁금해? 설레는 신상으로 채워지는 작은 행복
+            </span>
+
+            <div class="more-btn">
+                <a href="#">
+                    <span>View More</span>
+                </a>
+            </div>
+        </div>
+
+        <div class="swiper mySwiper swiper-6">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <li>
+                        <a href="#">
+                            <img src="https://www.etude.com/wp-content/uploads/2025/06/sebum_jelly_powder_02-800x800.jpg" alt="">
+                            <img src="https://www.etude.com/wp-content/uploads/2025/06/sebum_jelly_powder_04-800x800.jpg" alt="">
+                        </a>
+
+                        <div>
+                            <div>
+                                <div>
+                                    <span>#개기름치트키</span>
+                                    <span>#기름종이파우더</span>
+                                </div>
+
+                                <a href="#">
+                                피지쏙 젤리 파우더 8g
+                                </a>
+                            </div>
+
+                            <div>
+                                <span>15,000</span>
+                                <span>원</span>
+                            </div>
+                        </div>
+                    </li>
+                </div>
+                <div class="swiper-slide">
+                    <li>
+                    <a href="#">
+                        <img src="https://www.etude.com/wp-content/uploads/2022/07/sebum_pact_02-800x800.jpg" alt="">
+                        <img src="https://www.etude.com/wp-content/uploads/2022/07/sebum_pact_04-800x800.jpg" alt="">
+                    </a>
+
+                    <div>
+                        <div>
+                            <div>
+                                <span>#유수분밸런스</span>
+                                <span>#자연스러운</span>
+                            </div>
+
+                            <a href="#">
+                                피지쏙 팩트 9.5g
+                            </a>
+                        </div>
+
+                        <div>
+                            <span>14,000</span>
+                            <span>원</span>
+                        </div>
+                    </div>
+                    </li>
+                </div>
+                <div class="swiper-slide">
+                    <li>
+                    <a href="#">
+                        <img src="https://www.etude.com/wp-content/uploads/2022/07/sebum_powder_02-800x800.jpg" alt="">
+                        <img src="https://www.etude.com/wp-content/uploads/2022/07/sebum_powder_04-800x800.jpg" alt="">
+                    </a>
+
+                    <div>
+                        <div>
+                            <div>
+                                <span>#미세파우더</span>
+                                <span>#블러링</span>
+                            </div>
+
+                            <a href="#">
+                                피지쏙 파우더 5g
+                            </a>
+                        </div>
+
+                        <div>
+                            <span>10,000</span>
+                            <span>원</span>
+                        </div>
+                    </div>
+                    </li>
+                </div>
+                <div class="swiper-slide">
+                    <li class="select">
+                        <a href="#">
+                            <img src="https://www.etude.com/wp-content/uploads/2025/04/PRD_TH02-1-800x800.jpg" alt="">
+                            <img src="https://www.etude.com/wp-content/uploads/2025/04/PRD_TH05-1-800x800.jpg" alt="">
+                        </a>
+
+                        <div>
+                            <div>
+                                <div>
+                                    <span>#마루는강쥐</span>
+                                    <span>#싱글섀도우</span>
+                                </div>
+
+                                <a href="#">
+                                    와츠인 마이 아이즈 #마루는 강쥐 2g
+                                </a>
+                            </div>
+
+                        <nav>
+                            <ul>
+                                <li>
+                                    <div>
+                                        <img src="https://www.etude.com/wp-content/uploads/2025/04/CT_%EA%BC%AC%EC%88%9C%EB%82%B4%EC%95%A0%EC%B0%A9%EC%9D%B8%ED%98%95.jpg" alt="">
+                                    </div>
+                                </li>
+
+                                <li>
+                                    <div>
+                                        <img src="https://www.etude.com/wp-content/uploads/2025/04/CT_%EC%95%84%EB%A5%B4%EB%A5%B4%EB%A7%88%EB%A3%A8.jpg" alt="">
+                                    </div>
+                                </li>
+
+                                <li>
+                                    <div>
+                                        <img src="https://www.etude.com/wp-content/uploads/2025/04/CT_%EC%9D%98%EB%A6%AC%EA%B3%B5%EC%A3%BC%EB%93%B1%EC%9E%A5.jpg" alt="">
+                                    </div>
+                                </li>
+
+                                <li>
+                                    <div>
+                                        <img src="https://www.etude.com/wp-content/uploads/2025/04/CT_%ED%86%A0%EC%88%9C%ED%95%91%ED%81%AC.jpg" alt="">
+                                    </div>
+                                </li>
+                            </ul>
+                        </nav>
+
+                        <div>
+                            <span>6,000</span>
+                            <span>원</span>
+                        </div>
+                    </div>
+                    </li>
+                </div>
+                <div class="swiper-slide none">
+                <li>
+                    <a href="#">
+                        <img src="https://www.etude.com/wp-content/uploads/2025/05/PRD_TH01-800x800.jpg" alt="">
+                        <img src="https://www.etude.com/wp-content/uploads/2025/05/PRD_TH03-800x800.jpg" alt="">
+                    </a>
+
+                    <div>
+                        <div>
+                            <div>
+                                <span>#마루는강쥐</span>
+                                <span>#올인원팔레트</span>
+                            </div>
+
+                            <a href="#">
+                                플레이 멀티 팔레트 #마루는 강쥐 7.5g
+                            </a>
+                        </div>
+
+                        <div>
+                            <span>22,000</span>
+                            <span>원</span>
+                        </div>
+                    </div>
+                </li>
+                </div>
+                <div class="swiper-slide none">
+                    <li class="select">
+                    <a href="#">
+                        <img src="https://www.etude.com/wp-content/uploads/2025/04/PRD_TH01-2-800x800.jpg" alt="">
+                        <img src="https://www.etude.com/wp-content/uploads/2025/04/PRD_TH03-1-800x800.jpg" alt="">
+                    </a>
+
+                    <div>
+                        <div>
+                            <div>
+                                <span>#마루는강쥐</span>
+                                <span>#자연스러운 쉐딩</span>
+                            </div>
+
+                            <a href="#">
+                                그림자 쉐딩 #마루는 강쥐 10g
+                            </a>
+                        </div>
+
+                         <nav>
+                            <ul>
+                                <li>
+                                    <div>
+                                        <img src="https://www.etude.com/wp-content/uploads/2022/07/0137-Contour_Powder-01-c.jpg" alt="">
+                                    </div>
+                                </li>
+
+                                <li>
+                                    <div>
+                                        <img src="https://www.etude.com/wp-content/uploads/2022/07/contour_powder_03_c.jpg" alt="">
+                                    </div>
+                                </li>
+                            </ul>
+                        </nav>
+
+                        <div>
+                            <span>20,000</span>
+                            <span>원</span>
+                        </div>
+                    </div>
+                    </li>
+                </div>
+
+                <div class="swiper-slide none">
+                <li>
+                    <a href="#">
+                        <img src="https://www.etude.com/wp-content/uploads/2025/06/sebum_jelly_powder_02-800x800.jpg" alt="">
+                        <img src="https://www.etude.com/wp-content/uploads/2025/06/sebum_jelly_powder_04-800x800.jpg" alt="">
+                    </a>
+
+                    <div>
+                        <div>
+                            <div>
+                                <span>#개기름치트키</span>
+                                <span>#기름종이파우더</span>
+                            </div>
+
+                            <a href="#">
+                                피지쏙 젤리 파우더 8g
+                            </a>
+                        </div>
+
+                        <div>
+                            <span>15,000</span>
+                            <span>원</span>
+                        </div>
+                    </div>
+                </li>
+                </div>
+            </div>
+
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+        </div>
+    </section>
+
+    <section class="section-7">
+        <div class="sns-box">
+            <div class="tiktok">
+                <div class="tiktok-1">
+                    <div class="tiktok-txt">
+                        <span>ETUDE Official</span>
+                        <span>Tiktok</span>
+                    </div>
+    
+                    <a href="#" class="tiktok-img-box">
+                        <img src="https://www.etude.com/wp-content/uploads/2024/01/img_main_tiktox_2401.jpg" alt="">
+                    </a>
+                </div>
+
+                <div class="tiktok-2">
+                    <div class="tiktok-txt-2">
+                        <span>FOLLOW US</span>
+                        <span>@ETUDE_Official</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="instagram">
+                <div class="sns-icon">
+                    <a href="#">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="38" height="38" viewBox="0 0 38 38" fill="none">
+                            <path d="M37.8059 9.25993C37.6318 5.52358 35.9011 3.51414 35.3755 2.98718C32.4731 0 29.0768 0 19.0002 0C8.92049 0 5.52416 3.78426e-07 2.61868 2.99194C2.09775 3.51573 0.365542 5.52834 0.191371 9.25834C0.0488676 12.3519 -0.0303007 17.6786 0.0108669 19.0167C-0.0287173 20.3214 0.0488676 25.6481 0.191371 28.7417C0.365542 32.4732 2.09775 34.4859 2.62343 35.0144C5.52416 38 8.92049 38 19.0002 38C29.0784 38 32.4731 38 35.3802 35.0097C35.9011 34.4875 37.6318 32.478 37.8059 28.7417C37.9532 25.6608 38.0292 20.3293 37.9896 18.9849C38.0292 17.6723 37.9532 12.3423 37.8059 9.25993ZM19.0002 29.1543C13.3951 29.1543 8.83658 24.5831 8.83658 18.9659C8.83658 13.3471 13.3951 8.77741 19.0002 8.77741C24.6054 8.77741 29.1655 13.3471 29.1655 18.9659C29.1655 24.5847 24.6038 29.1543 19.0002 29.1543ZM30.1598 10.3742C28.7158 10.3742 27.5394 9.19644 27.5394 7.7473C27.5394 6.29974 28.7158 5.12201 30.1598 5.12201C31.6039 5.12201 32.7771 6.29974 32.7771 7.7473C32.7771 9.19644 31.6039 10.3742 30.1598 10.3742Z" fill="#333333"></path>
+                            <path d="M18.9992 11C14.5875 11 11 14.5914 11 19.0008C11 23.4134 14.5859 27 18.9992 27C23.4093 27 27 23.4134 27 19.0008C27 14.5914 23.4093 11 18.9992 11Z" fill="#333333"></path></svg>
+                    </a>
+                    <a href="#">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="38" height="38" viewBox="0 0 38 38" fill="none"><path d="M19.0127 0C8.49775 0 0 8.55632 0 19.0994C0 28.6976 7.02841 36.64 16.2323 38V24.88H11.2781V19.1599H16.2323V15.5983C16.2323 11.2907 17.5449 9.226 20.4598 7.88823C21.3196 7.49374 23.1024 7.08016 27.9569 7.59236V12.7064H24.434C23.1404 12.7064 22.0828 13.769 22.0828 15.0654V19.1583H27.7622L26.9578 24.8784H22.0828V37.9396C31.1093 36.4634 38 28.5974 38 19.0978C38 8.55632 29.5054 0 19.0127 0Z" fill="#333333"></path></svg>
+                    </a>
+                    <a href="#">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="38" height="27" viewBox="0 0 38 27" fill="none"><path d="M38 13.5C38 13.5 38 19.7751 37.2061 22.7833C36.7691 24.4421 35.4811 25.7491 33.8471 26.1925C30.8818 27 18.9973 27 18.9973 27C18.9973 27 7.1155 27 4.1515 26.1925C2.51614 25.7491 1.22957 24.4421 0.792571 22.7833C-4.85352e-07 19.7751 0 13.5 0 13.5C0 13.5 -4.85352e-07 7.22354 0.792571 4.2167C1.22957 2.55657 2.5175 1.24954 4.1515 0.807481C7.1155 -4.07879e-07 18.9973 0 18.9973 0C18.9973 0 30.8818 -4.07879e-07 33.8471 0.807481C35.4798 1.24954 36.7677 2.55657 37.2061 4.2167C38 7.22354 38 13.5 38 13.5ZM25.1804 13.073L15.2489 7.37546C15.0996 7.28923 14.9136 7.28923 14.7644 7.37682C14.6137 7.46442 14.5228 7.62865 14.5228 7.80383V19.1975C14.5228 19.3727 14.6137 19.5356 14.7644 19.6232C14.8404 19.6683 14.9245 19.6902 15.01 19.6902C15.0928 19.6902 15.1769 19.6697 15.2502 19.6259L25.1818 13.9284C25.3324 13.8408 25.4274 13.6766 25.4274 13.5014C25.4247 13.3221 25.3311 13.1606 25.1804 13.073Z" fill="#333333"></path></svg>
+                    </a>
+                    <a href="#">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="38" height="44" viewBox="0 0 38 44" fill="none"><path d="M27.7126 1.81627C27.6636 1.53293 27.6255 1.24778 27.5982 0.957174V0H20.0898V29.7995C20.0789 33.2722 17.2564 36.0857 13.7764 36.0857C12.7539 36.0857 11.7912 35.8405 10.9376 35.4118C8.87612 34.3729 7.46487 32.2406 7.46487 29.7777C7.46487 26.2941 10.2928 23.4698 13.7764 23.4698C14.4448 23.4698 15.0896 23.5716 15.6926 23.7623V17.8267V16.1357C15.066 16.0504 14.4357 16.0068 13.8 16.0068C6.17896 16.0068 0 22.1803 0 29.7977C0 34.5727 2.42835 38.7774 6.11538 41.2529L6.1172 41.2548C8.31307 42.7314 10.9557 43.5887 13.7982 43.5887C21.4175 43.5887 27.5964 37.4152 27.5964 29.7977V14.5719C30.5279 16.6661 34.1204 17.8975 38 17.8975V10.4381C36.0475 10.4436 34.1332 9.89504 32.4767 8.86158C30.012 7.32502 28.2357 4.78769 27.7126 1.81627Z" fill="#333333"></path></svg>
+                    </a>
+                </div>
+
+                <div class="instagram-txt">
+                    <span>ETUDE Official</span>
+                    <span>Instagram</span>
+                </div>
+
+                <div class="swiper mySwiper swiper-7">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <a href="#">
+                                <img src="./imgs/에뛰드/img1_main_insta_1212.jpg" alt="">
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="#">
+                                <img src="./imgs/에뛰드/img2_main_insta_1212.jpg" alt="">
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="#">
+                                <img src="./imgs/에뛰드/img3_main_insta_1212.jpg" alt="">
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="#">
+                                <img src="./imgs/에뛰드/img4_main_insta_1212.jpg" alt="">
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="#">
+                                <img src="./imgs/에뛰드/img5_main_insta_1212.jpg" alt="">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section-7-mb">
+        <div class="sns-box">
+            <div class="instagram">
+                <div class="swiper mySwiper swiper-7">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <a href="#">
+                                <img src="./imgs/에뛰드/img1_main_insta_1212.jpg" alt="">
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="#">
+                                <img src="./imgs/에뛰드/img2_main_insta_1212.jpg" alt="">
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="#">
+                                <img src="./imgs/에뛰드/img3_main_insta_1212.jpg" alt="">
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="#">
+                                <img src="./imgs/에뛰드/img4_main_insta_1212.jpg" alt="">
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="#">
+                                <img src="./imgs/에뛰드/img5_main_insta_1212.jpg" alt="">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="tiktok">
+                <div class="tiktok-1">
+                    <div class="tiktok-txt">
+                        <span>ETUDE Official</span>
+                        <span>Tiktok</span>
+                    </div>
+                </div>
+
+                <div class="tiktok-2">
+                    <a href="#" class="tiktok-img-box">
+                        <img src="https://www.etude.com/wp-content/uploads/2024/01/img_main_tiktox_2401.jpg" alt="">
+                    </a>
+                </div>
+
+                <div class="sns-icon">
+                    <a href="#">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 38 38" fill="none">
+                            <path d="M37.8059 9.25993C37.6318 5.52358 35.9011 3.51414 35.3755 2.98718C32.4731 0 29.0768 0 19.0002 0C8.92049 0 5.52416 3.78426e-07 2.61868 2.99194C2.09775 3.51573 0.365542 5.52834 0.191371 9.25834C0.0488676 12.3519 -0.0303007 17.6786 0.0108669 19.0167C-0.0287173 20.3214 0.0488676 25.6481 0.191371 28.7417C0.365542 32.4732 2.09775 34.4859 2.62343 35.0144C5.52416 38 8.92049 38 19.0002 38C29.0784 38 32.4731 38 35.3802 35.0097C35.9011 34.4875 37.6318 32.478 37.8059 28.7417C37.9532 25.6608 38.0292 20.3293 37.9896 18.9849C38.0292 17.6723 37.9532 12.3423 37.8059 9.25993ZM19.0002 29.1543C13.3951 29.1543 8.83658 24.5831 8.83658 18.9659C8.83658 13.3471 13.3951 8.77741 19.0002 8.77741C24.6054 8.77741 29.1655 13.3471 29.1655 18.9659C29.1655 24.5847 24.6038 29.1543 19.0002 29.1543ZM30.1598 10.3742C28.7158 10.3742 27.5394 9.19644 27.5394 7.7473C27.5394 6.29974 28.7158 5.12201 30.1598 5.12201C31.6039 5.12201 32.7771 6.29974 32.7771 7.7473C32.7771 9.19644 31.6039 10.3742 30.1598 10.3742Z" fill="#333333"></path>
+                            <path d="M18.9992 11C14.5875 11 11 14.5914 11 19.0008C11 23.4134 14.5859 27 18.9992 27C23.4093 27 27 23.4134 27 19.0008C27 14.5914 23.4093 11 18.9992 11Z" fill="#333333"></path></svg>
+                    </a>
+                    <a href="#">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 38 38" fill="none"><path d="M19.0127 0C8.49775 0 0 8.55632 0 19.0994C0 28.6976 7.02841 36.64 16.2323 38V24.88H11.2781V19.1599H16.2323V15.5983C16.2323 11.2907 17.5449 9.226 20.4598 7.88823C21.3196 7.49374 23.1024 7.08016 27.9569 7.59236V12.7064H24.434C23.1404 12.7064 22.0828 13.769 22.0828 15.0654V19.1583H27.7622L26.9578 24.8784H22.0828V37.9396C31.1093 36.4634 38 28.5974 38 19.0978C38 8.55632 29.5054 0 19.0127 0Z" fill="#333333"></path></svg>
+                    </a>
+                    <a href="#">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="17" viewBox="0 0 38 27" fill="none"><path d="M38 13.5C38 13.5 38 19.7751 37.2061 22.7833C36.7691 24.4421 35.4811 25.7491 33.8471 26.1925C30.8818 27 18.9973 27 18.9973 27C18.9973 27 7.1155 27 4.1515 26.1925C2.51614 25.7491 1.22957 24.4421 0.792571 22.7833C-4.85352e-07 19.7751 0 13.5 0 13.5C0 13.5 -4.85352e-07 7.22354 0.792571 4.2167C1.22957 2.55657 2.5175 1.24954 4.1515 0.807481C7.1155 -4.07879e-07 18.9973 0 18.9973 0C18.9973 0 30.8818 -4.07879e-07 33.8471 0.807481C35.4798 1.24954 36.7677 2.55657 37.2061 4.2167C38 7.22354 38 13.5 38 13.5ZM25.1804 13.073L15.2489 7.37546C15.0996 7.28923 14.9136 7.28923 14.7644 7.37682C14.6137 7.46442 14.5228 7.62865 14.5228 7.80383V19.1975C14.5228 19.3727 14.6137 19.5356 14.7644 19.6232C14.8404 19.6683 14.9245 19.6902 15.01 19.6902C15.0928 19.6902 15.1769 19.6697 15.2502 19.6259L25.1818 13.9284C25.3324 13.8408 25.4274 13.6766 25.4274 13.5014C25.4247 13.3221 25.3311 13.1606 25.1804 13.073Z" fill="#333333"></path></svg>
+                    </a>
+                    <a href="#">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="27" viewBox="0 0 38 44" fill="none"><path d="M27.7126 1.81627C27.6636 1.53293 27.6255 1.24778 27.5982 0.957174V0H20.0898V29.7995C20.0789 33.2722 17.2564 36.0857 13.7764 36.0857C12.7539 36.0857 11.7912 35.8405 10.9376 35.4118C8.87612 34.3729 7.46487 32.2406 7.46487 29.7777C7.46487 26.2941 10.2928 23.4698 13.7764 23.4698C14.4448 23.4698 15.0896 23.5716 15.6926 23.7623V17.8267V16.1357C15.066 16.0504 14.4357 16.0068 13.8 16.0068C6.17896 16.0068 0 22.1803 0 29.7977C0 34.5727 2.42835 38.7774 6.11538 41.2529L6.1172 41.2548C8.31307 42.7314 10.9557 43.5887 13.7982 43.5887C21.4175 43.5887 27.5964 37.4152 27.5964 29.7977V14.5719C30.5279 16.6661 34.1204 17.8975 38 17.8975V10.4381C36.0475 10.4436 34.1332 9.89504 32.4767 8.86158C30.012 7.32502 28.2357 4.78769 27.7126 1.81627Z" fill="#333333"></path></svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="line"></div>
+
+    <section class="section-8">
+        <div class="event">
+            <div class="img-box-8">
+                <img src="https://www.etude.com/wp-content/uploads/2022/05/newevent-icon.png" alt="붓">
+            </div>
+
+            <div class="event-txt">
+                <span>News & Event</span>
+            </div>
+
+            <div class="more-btn">
+                <a href="#">
+                    <span>View More</span>
+                </a>
+            </div>
+        </div>
+
+        <div class="swiper-box-8">
+            <div class="swiper mySwiper swiper-8">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide recycle">
+                        <li>
+                            <a href="#">
+                                <img src=".../imgs/에뛰드/EP01_002_main_news_01_recycle.jpg" alt="">
+                                <span>공병수거 캠페인</span>
+                                <div></div>
+                            </a>
+                        </li>
+                    </div>
+    
+                    <div class="swiper-slide vegan">
+                        <li>
+                            <a href="#">
+                                <img src=".../imgs/에뛰드/EP01_002_main_news_02_vegan.jpg" alt="">
+                                <span>모두를 위한 비건 라이프</span>
+                                <div></div>
+                            </a>
+                        </li>
+                    </div>
+    
+                    <div class="swiper-slide">
+                        <li>
+                            <a href="#">
+                                <img src=".../imgs/에뛰드/EP01_002_main_news_04_brand.jpg" alt="">
+                                <span>어바웃 에뛰드</span>
+                                <div></div>
+                            </a>
+                        </li>
+                    </div>
+    
+                </div>
+    
+            </div>
+
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+        </div>
+    </section>
+
+    <section class="section-8-mb">
+        <div class="event-mb">
+            <div class="img-box-mb-8">
+                <img src="https://www.etude.com/wp-content/uploads/2022/05/newevent-icon.png" alt="붓">
+            </div>
+
+            <div class="event-txt-mb">
+                <span>News & Event</span>
+            </div>
+
+            <div class="event-txt-mb-2">
+                <a href="#">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="12" height="21" viewBox="0 0 20 21" fill="none"><g clip-path="url(#clip0_880_50759)"><path d="M5 1.5L14 10.5L5 19.5" stroke="#333333" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path></g><defs><clipPath id="clip0_880_50759"><rect width="20" height="20" fill="white" transform="translate(0 0.5)"></rect></clipPath></defs></svg>
+                </a>
+            </div>
+        </div>
+
+        <div class="swiper mySwiper swiper-8-mb">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide recycle">
+                    <li>
+                        <a href="#">
+                            <img src=".../imgs/에뛰드/EP01_002_main_news_01_recycle.jpg" alt="">
+                            <span>공병수거 캠페인</span>
+                            <div></div>
+                        </a>
+                    </li>
+                </div>
+
+                <div class="swiper-slide vegan">
+                    <li>
+                        <a href="#">
+                            <img src=".../imgs/에뛰드/EP01_002_main_news_02_vegan.jpg" alt="">
+                            <span>모두를 위한 비건 라이프</span>
+                            <div></div>
+                        </a>
+                    </li>
+                </div>
+
+                <div class="swiper-slide">
+                    <li>
+                        <a href="#">
+                            <img src=".../imgs/에뛰드/EP01_002_main_news_04_brand.jpg" alt="">
+                            <span>어바웃 에뛰드</span>
+                            <div></div>
+                        </a>
+                    </li>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-box">
+            <div class="f-footer">
+                <div>
+                    <span>공지</span>
+                    <a href="#">[공지] 사이트 점검 안내 (3/19)</a>
+                    <a href="#">
+                        <span>더보기</span>
+                        <i class="fa-solid fa-plus"></i>
+                    </a>
+                </div>
+
+                <div>
+                    <ul>
+                        <li class="family">
+                            <div class="family">
+                                <span>Family Site</span>
+                                <i class="fa-solid fa-chevron-up"></i>
+
+                                <ul>
+                                    <li><a href="#">ETUDE GLOBAL MALL</a></li>
+                                    <li><a href="#">JAPAN</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        
+                        <li class="site">
+                            <div class="site">
+                                <span>Site Map</span>
+                                <i class="fa-solid fa-chevron-up"></i>
+
+                                <ul class="s-menu-box">
+                                    <li>
+                                        <ul>
+                                            <li>
+                                                <a href="#">
+                                                    BRAND
+                                                </a>
+    
+                                                <ul>
+                                                    <li><a href="#">About ETUDE</a></li>
+                                                    <li><a href="#">뷰티즌</a></li>
+                                                    <li><a href="#">지구를 위한 활동</a></li>
+                                                </ul>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    PRODUCT
+                                                </a>
+    
+                                                <ul class="category">
+                                                    <li><a href="#">전체보기</a></li>
+                                                    <li><a href="#">신제품</a></li>
+                                                    <li><a href="#">카테고리</a>
+                                                        <ul>
+                                                            <li><a href="#">아이</a></li>
+                                                            <li><a href="#">립</a></li>
+                                                            <li><a href="#">페이스</a></li>
+                                                            <li><a href="#">네일</a></li>
+                                                            <li><a href="#">스킨케어</a></li>
+                                                            <li><a href="#">마스크팩</a></li>
+                                                            <li><a href="#">클렌저</a></li>
+                                                            <li><a href="#">바디</a></li>
+                                                            <li><a href="#">헤어</a></li>
+                                                            <li><a href="#">툴</a></li>
+                                                        </ul>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    MAKEUP LOOK
+                                                </a>
+    
+                                                <ul>
+                                                    <li><a href="#">메이크업룩</a></li>
+                                                </ul>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    @ETHUDEDFFICAL
+                                                </a>
+    
+                                                <ul>
+                                                    <li><a href="#">Instargram</a></li>
+                                                    <li><a href="#">Tiktok</a></li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </li>
+
+                                    <li>
+                                        <ul>
+                                            <li>
+                                                <a href="#">
+                                                    STORE
+                                                </a>
+    
+                                                <ul>
+                                                    <li><a href="#">온라인</a></li>
+                                                    <li><a href="#">오프라인</a></li>
+                                                </ul>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    CONTACT
+                                                </a>
+    
+                                                <ul>
+                                                    <li><a href="#">공시사항</a></li>
+                                                    <li><a href="#">FAQ</a></li>
+                                                    <li><a href="#">고객문의</a></li>
+                                                </ul>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    MEMBERSHIP
+                                                </a>
+    
+                                                <ul>
+                                                    <li><a href="#">핑크멤버쉽</a></li>
+                                                    <li><a href="#">뷰티포인트</a></li>
+                                                </ul>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    뽀오얀
+                                                </a>
+    
+                                                <ul>
+                                                    <li><a href="#">About 뽀오얀</a></li>
+                                                    <li><a href="#">제품보기</a></li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul> 
+                </div>
+            </div>
+
+            <div class="s-footer">
+                <a href="#">공지사항</a>
+                <a href="#">이용약관</a>
+                <a href="#">전자공고</a>
+                <a href="#">개인정보처리방침</a>
+                <a href="#">영상정보처리기기 운영·관리 방침</a>
+            </div>
+
+            <div class="t-footer">
+                <div>
+                    <div>
+                        <div>
+                            <img src="imgs/에뛰드/img_logo2023-1.png" alt="">
+                        </div>
+                        <div>
+                            <span>(주)에뛰드 대표이사 : 이수연</span>
+                            <span>개인정보보호책임자 : 이수연</span>
+                            <span>사업자등록번호 : 135-81-05033</span>
+                            <span>주소 : 서울특별시 용산구 한강대로 100 (한강로 2가)</span>
+                        </div>
+                    </div>
+
+                    <span>© ETUDE CORPORATION. ALL RIGHTS RESERVED.</span>
+                </div>
+
+                <div class="contact">
+                    <div>
+                        <span>CONTACT</span>
+                    </div>
+
+                    <div>
+                        <div class="call">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="34" height="34" viewBox="0 0 34 34" fill="none">
+                                <path d="M13.4516 11.0869L7.96439 6L6.242 7.59657C5.82419 7.98394 5.4983 8.44795 5.28525 8.95888C5.0722 9.46981 4.97668 10.0164 5.00481 10.5635C5.2417 15.1737 7.32378 19.5365 10.8445 22.8001V22.8001C14.2926 25.9966 18.8813 27.9159 23.7484 28.1974L24.0414 28.2145C24.6417 28.2494 25.2431 28.1654 25.8057 27.9683C26.3683 27.7711 26.8792 27.4653 27.3045 27.071L29 25.4995L23.2078 20.1298L20.6107 22.5371C20.4724 22.6652 20.3012 22.7586 20.1132 22.8086C19.9252 22.8585 19.7265 22.8633 19.536 22.8225V22.8225C17.3533 22.3563 15.3559 21.331 13.7715 19.8635V19.8635C12.2635 18.4669 11.1858 16.7219 10.6502 14.8094L10.5657 14.5069C10.5153 14.3267 10.5166 14.1373 10.5694 13.9577C10.6221 13.778 10.7245 13.6142 10.8665 13.4824L13.4516 11.0869Z" stroke="#333333" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                            </svg>
+                            <div>
+                                <span>제품 문의 : 080-022-2285</span>
+                                <span>고객 문의 : 1544-5418</span>
+                            </div>
+                            
+                        </div>
+
+                        <div>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="34" height="34" viewBox="0 0 34 34" fill="none"><path d="M16 28C22.6274 28 28 22.6274 28 16C28 9.37258 22.6274 4 16 4C9.37258 4 4 9.37258 4 16C4 22.6274 9.37258 28 16 28Z" stroke="#333333" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path><path d="M22 10L15.5291 18L11 14" stroke="#333333" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path><path d="M16 4V6" stroke="#333333" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path><path d="M28 16H26" stroke="#333333" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path><path d="M16 28V26" stroke="#333333" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path><path d="M4 16H6" stroke="#333333" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+                            <div>
+                                <span>운영 시간 : 평일 13:00 ~ 17:00 (주말 및 공휴일 휴무)</span>
+                                <span>점심 시간 : 12:00 ~ 13:00</span>
+                            </div>
+                            
+                        </div>
+
+                        <div>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="34" height="34" viewBox="0 0 34 34" fill="none"><path d="M29 9H5V25H29V9Z" stroke="#333333" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path><path d="M5 9L17 19L29 9" stroke="#333333" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path><path d="M5 25L13 16" stroke="#333333" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path><path d="M29 25L21 16" stroke="#333333" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+                            <div>
+                                <span>대표 이메일 : etude_master@etude.co.kr</span>
+                            </div>
+                        </div>
+
+                        <div class="sns">
+                            <a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="38" height="38" viewBox="0 0 38 38" fill="none"><path d="M37.8059 9.25993C37.6318 5.52358 35.9011 3.51414 35.3755 2.98718C32.4731 0 29.0768 0 19.0002 0C8.92049 0 5.52416 3.78426e-07 2.61868 2.99194C2.09775 3.51573 0.365542 5.52834 0.191371 9.25834C0.0488676 12.3519 -0.0303007 17.6786 0.0108669 19.0167C-0.0287173 20.3214 0.0488676 25.6481 0.191371 28.7417C0.365542 32.4732 2.09775 34.4859 2.62343 35.0144C5.52416 38 8.92049 38 19.0002 38C29.0784 38 32.4731 38 35.3802 35.0097C35.9011 34.4875 37.6318 32.478 37.8059 28.7417C37.9532 25.6608 38.0292 20.3293 37.9896 18.9849C38.0292 17.6723 37.9532 12.3423 37.8059 9.25993ZM19.0002 29.1543C13.3951 29.1543 8.83658 24.5831 8.83658 18.9659C8.83658 13.3471 13.3951 8.77741 19.0002 8.77741C24.6054 8.77741 29.1655 13.3471 29.1655 18.9659C29.1655 24.5847 24.6038 29.1543 19.0002 29.1543ZM30.1598 10.3742C28.7158 10.3742 27.5394 9.19644 27.5394 7.7473C27.5394 6.29974 28.7158 5.12201 30.1598 5.12201C31.6039 5.12201 32.7771 6.29974 32.7771 7.7473C32.7771 9.19644 31.6039 10.3742 30.1598 10.3742Z" fill="#777777"></path><path d="M18.9992 11C14.5875 11 11 14.5914 11 19.0008C11 23.4134 14.5859 27 18.9992 27C23.4093 27 27 23.4134 27 19.0008C27 14.5914 23.4093 11 18.9992 11Z" fill="#777777"></path></svg></a>
+                            <a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="38" height="38" viewBox="0 0 38 38" fill="none"><path d="M19.0127 0C8.49775 0 0 8.55632 0 19.0994C0 28.6976 7.02841 36.64 16.2323 38V24.88H11.2781V19.1599H16.2323V15.5983C16.2323 11.2907 17.5449 9.226 20.4598 7.88823C21.3196 7.49374 23.1024 7.08016 27.9569 7.59236V12.7064H24.434C23.1404 12.7064 22.0828 13.769 22.0828 15.0654V19.1583H27.7622L26.9578 24.8784H22.0828V37.9396C31.1093 36.4634 38 28.5974 38 19.0978C38 8.55632 29.5054 0 19.0127 0Z" fill="#777777"></path></svg></a>
+                            <a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="38" height="27" viewBox="0 0 38 27" fill="none"><path d="M38 13.5C38 13.5 38 19.7751 37.2061 22.7833C36.7691 24.4421 35.4811 25.7491 33.8471 26.1925C30.8818 27 18.9973 27 18.9973 27C18.9973 27 7.1155 27 4.1515 26.1925C2.51614 25.7491 1.22957 24.4421 0.792571 22.7833C-4.85352e-07 19.7751 0 13.5 0 13.5C0 13.5 -4.85352e-07 7.22354 0.792571 4.2167C1.22957 2.55657 2.5175 1.24954 4.1515 0.807481C7.1155 -4.07879e-07 18.9973 0 18.9973 0C18.9973 0 30.8818 -4.07879e-07 33.8471 0.807481C35.4798 1.24954 36.7677 2.55657 37.2061 4.2167C38 7.22354 38 13.5 38 13.5ZM25.1804 13.073L15.2489 7.37546C15.0996 7.28923 14.9136 7.28923 14.7644 7.37682C14.6137 7.46442 14.5228 7.62865 14.5228 7.80383V19.1975C14.5228 19.3727 14.6137 19.5356 14.7644 19.6232C14.8404 19.6683 14.9245 19.6902 15.01 19.6902C15.0928 19.6902 15.1769 19.6697 15.2502 19.6259L25.1818 13.9284C25.3324 13.8408 25.4274 13.6766 25.4274 13.5014C25.4247 13.3221 25.3311 13.1606 25.1804 13.073Z" fill="#777777"></path></svg></a>
+                            <a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="38" height="44" viewBox="0 0 38 44" fill="none"><path d="M27.7126 1.81627C27.6636 1.53293 27.6255 1.24778 27.5982 0.957174V0H20.0898V29.7995C20.0789 33.2722 17.2564 36.0857 13.7764 36.0857C12.7539 36.0857 11.7912 35.8405 10.9376 35.4118C8.87612 34.3729 7.46487 32.2406 7.46487 29.7777C7.46487 26.2941 10.2928 23.4698 13.7764 23.4698C14.4448 23.4698 15.0896 23.5716 15.6926 23.7623V17.8267V16.1357C15.066 16.0504 14.4357 16.0068 13.8 16.0068C6.17896 16.0068 0 22.1803 0 29.7977C0 34.5727 2.42835 38.7774 6.11538 41.2529L6.1172 41.2548C8.31307 42.7314 10.9557 43.5887 13.7982 43.5887C21.4175 43.5887 27.5964 37.4152 27.5964 29.7977V14.5719C30.5279 16.6661 34.1204 17.8975 38 17.8975V10.4381C36.0475 10.4436 34.1332 9.89504 32.4767 8.86158C30.012 7.32502 28.2357 4.78769 27.7126 1.81627Z" fill="#777777"></path></svg></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <footer class="f-mb">
+        <div class="footer-box">
+            <div class="f-footer">
+                <div>
+                    <span>공지</span>
+                    <a href="#">[공지] 사이트 점검 안내 (3/19)</a>
+                    <a href="#">
+                        <span>더보기</span>
+                        <i class="fa-solid fa-plus"></i>
+                    </a>
+                </div>
+            </div>
+
+            <div class="s-footer">
+                <a href="#">공지사항</a>
+                <a href="#">이용약관</a>
+                <a href="#">전자공고</a>
+                <a href="#">개인정보처리방침</a>
+                <a href="#">영상정보처리기기 운영·관리 방침</a>
+            </div>
+
+            <div class="family-mb">
+                <p>FAMILY SITE</p>
+                <a href="#">INTERNATIONAL</a>
+                <a href="#">JAPAN</a>
+            </div>
+
+            <div class="t-footer">
+                <div>
+                    <div>
+                        <div>
+                            <img src="imgs/에뛰드/img_logo2023-1.png" alt="">
+                        </div>
+                        <div>
+                            <span>(주)에뛰드 대표이사 : 이수연</span>
+                            <span>개인정보보호책임자 : 이수연</span>
+                            <span>사업자등록번호 : 135-81-05033</span>
+                            <span>주소 : 서울특별시 용산구 한강대로 100 (한강로 2가)</span>
+                        </div>
+                    </div>
+
+                    <span>© ETUDE CORPORATION. ALL RIGHTS RESERVED.</span>
+                </div>
+
+                <div class="contact">
+                    <div>
+                        <span>CONTACT</span>
+                    </div>
+
+                    <div>
+                        <div class="call">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="34" height="34" viewBox="0 0 34 34" fill="none">
+                                <path d="M13.4516 11.0869L7.96439 6L6.242 7.59657C5.82419 7.98394 5.4983 8.44795 5.28525 8.95888C5.0722 9.46981 4.97668 10.0164 5.00481 10.5635C5.2417 15.1737 7.32378 19.5365 10.8445 22.8001V22.8001C14.2926 25.9966 18.8813 27.9159 23.7484 28.1974L24.0414 28.2145C24.6417 28.2494 25.2431 28.1654 25.8057 27.9683C26.3683 27.7711 26.8792 27.4653 27.3045 27.071L29 25.4995L23.2078 20.1298L20.6107 22.5371C20.4724 22.6652 20.3012 22.7586 20.1132 22.8086C19.9252 22.8585 19.7265 22.8633 19.536 22.8225V22.8225C17.3533 22.3563 15.3559 21.331 13.7715 19.8635V19.8635C12.2635 18.4669 11.1858 16.7219 10.6502 14.8094L10.5657 14.5069C10.5153 14.3267 10.5166 14.1373 10.5694 13.9577C10.6221 13.778 10.7245 13.6142 10.8665 13.4824L13.4516 11.0869Z" stroke="#333333" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                            </svg>
+                            <div>
+                                <span>제품 문의 : 080-022-2285</span>
+                                <span>고객 문의 : 1544-5418</span>
+                            </div>
+                        </div>
+
+                        <div>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="34" height="34" viewBox="0 0 34 34" fill="none"><path d="M16 28C22.6274 28 28 22.6274 28 16C28 9.37258 22.6274 4 16 4C9.37258 4 4 9.37258 4 16C4 22.6274 9.37258 28 16 28Z" stroke="#333333" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path><path d="M22 10L15.5291 18L11 14" stroke="#333333" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path><path d="M16 4V6" stroke="#333333" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path><path d="M28 16H26" stroke="#333333" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path><path d="M16 28V26" stroke="#333333" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path><path d="M4 16H6" stroke="#333333" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+                            <div>
+                                <span>운영 시간 : 평일 13:00 ~ 17:00 (주말 및 공휴일 휴무)</span>
+                                <span>점심 시간 : 12:00 ~ 13:00</span>
+                            </div>
+                            
+                        </div>
+
+                        <div>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="34" height="34" viewBox="0 0 34 34" fill="none"><path d="M29 9H5V25H29V9Z" stroke="#333333" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path><path d="M5 9L17 19L29 9" stroke="#333333" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path><path d="M5 25L13 16" stroke="#333333" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path><path d="M29 25L21 16" stroke="#333333" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+                            <div>
+                                <span>대표 이메일 : etude_master@etude.co.kr</span>
+                            </div>
+                        </div>
+
+                        <div class="sns">
+                            <a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="38" height="38" viewBox="0 0 38 38" fill="none"><path d="M37.8059 9.25993C37.6318 5.52358 35.9011 3.51414 35.3755 2.98718C32.4731 0 29.0768 0 19.0002 0C8.92049 0 5.52416 3.78426e-07 2.61868 2.99194C2.09775 3.51573 0.365542 5.52834 0.191371 9.25834C0.0488676 12.3519 -0.0303007 17.6786 0.0108669 19.0167C-0.0287173 20.3214 0.0488676 25.6481 0.191371 28.7417C0.365542 32.4732 2.09775 34.4859 2.62343 35.0144C5.52416 38 8.92049 38 19.0002 38C29.0784 38 32.4731 38 35.3802 35.0097C35.9011 34.4875 37.6318 32.478 37.8059 28.7417C37.9532 25.6608 38.0292 20.3293 37.9896 18.9849C38.0292 17.6723 37.9532 12.3423 37.8059 9.25993ZM19.0002 29.1543C13.3951 29.1543 8.83658 24.5831 8.83658 18.9659C8.83658 13.3471 13.3951 8.77741 19.0002 8.77741C24.6054 8.77741 29.1655 13.3471 29.1655 18.9659C29.1655 24.5847 24.6038 29.1543 19.0002 29.1543ZM30.1598 10.3742C28.7158 10.3742 27.5394 9.19644 27.5394 7.7473C27.5394 6.29974 28.7158 5.12201 30.1598 5.12201C31.6039 5.12201 32.7771 6.29974 32.7771 7.7473C32.7771 9.19644 31.6039 10.3742 30.1598 10.3742Z" fill="#777777"></path><path d="M18.9992 11C14.5875 11 11 14.5914 11 19.0008C11 23.4134 14.5859 27 18.9992 27C23.4093 27 27 23.4134 27 19.0008C27 14.5914 23.4093 11 18.9992 11Z" fill="#777777"></path></svg></a>
+                            <a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="38" height="38" viewBox="0 0 38 38" fill="none"><path d="M19.0127 0C8.49775 0 0 8.55632 0 19.0994C0 28.6976 7.02841 36.64 16.2323 38V24.88H11.2781V19.1599H16.2323V15.5983C16.2323 11.2907 17.5449 9.226 20.4598 7.88823C21.3196 7.49374 23.1024 7.08016 27.9569 7.59236V12.7064H24.434C23.1404 12.7064 22.0828 13.769 22.0828 15.0654V19.1583H27.7622L26.9578 24.8784H22.0828V37.9396C31.1093 36.4634 38 28.5974 38 19.0978C38 8.55632 29.5054 0 19.0127 0Z" fill="#777777"></path></svg></a>
+                            <a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="38" height="27" viewBox="0 0 38 27" fill="none"><path d="M38 13.5C38 13.5 38 19.7751 37.2061 22.7833C36.7691 24.4421 35.4811 25.7491 33.8471 26.1925C30.8818 27 18.9973 27 18.9973 27C18.9973 27 7.1155 27 4.1515 26.1925C2.51614 25.7491 1.22957 24.4421 0.792571 22.7833C-4.85352e-07 19.7751 0 13.5 0 13.5C0 13.5 -4.85352e-07 7.22354 0.792571 4.2167C1.22957 2.55657 2.5175 1.24954 4.1515 0.807481C7.1155 -4.07879e-07 18.9973 0 18.9973 0C18.9973 0 30.8818 -4.07879e-07 33.8471 0.807481C35.4798 1.24954 36.7677 2.55657 37.2061 4.2167C38 7.22354 38 13.5 38 13.5ZM25.1804 13.073L15.2489 7.37546C15.0996 7.28923 14.9136 7.28923 14.7644 7.37682C14.6137 7.46442 14.5228 7.62865 14.5228 7.80383V19.1975C14.5228 19.3727 14.6137 19.5356 14.7644 19.6232C14.8404 19.6683 14.9245 19.6902 15.01 19.6902C15.0928 19.6902 15.1769 19.6697 15.2502 19.6259L25.1818 13.9284C25.3324 13.8408 25.4274 13.6766 25.4274 13.5014C25.4247 13.3221 25.3311 13.1606 25.1804 13.073Z" fill="#777777"></path></svg></a>
+                            <a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="38" height="44" viewBox="0 0 38 44" fill="none"><path d="M27.7126 1.81627C27.6636 1.53293 27.6255 1.24778 27.5982 0.957174V0H20.0898V29.7995C20.0789 33.2722 17.2564 36.0857 13.7764 36.0857C12.7539 36.0857 11.7912 35.8405 10.9376 35.4118C8.87612 34.3729 7.46487 32.2406 7.46487 29.7777C7.46487 26.2941 10.2928 23.4698 13.7764 23.4698C14.4448 23.4698 15.0896 23.5716 15.6926 23.7623V17.8267V16.1357C15.066 16.0504 14.4357 16.0068 13.8 16.0068C6.17896 16.0068 0 22.1803 0 29.7977C0 34.5727 2.42835 38.7774 6.11538 41.2529L6.1172 41.2548C8.31307 42.7314 10.9557 43.5887 13.7982 43.5887C21.4175 43.5887 27.5964 37.4152 27.5964 29.7977V14.5719C30.5279 16.6661 34.1204 17.8975 38 17.8975V10.4381C36.0475 10.4436 34.1332 9.89504 32.4767 8.86158C30.012 7.32502 28.2357 4.78769 27.7126 1.81627Z" fill="#777777"></path></svg></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <footer class="f-mb-s">
+        <div class="footer-box">
+            <div class="f-footer">
+                <div>
+                    <span>공지</span>
+                    <a href="#">[공지] 사이트 점검 안내 (3/19)</a>
+                    <a href="#">
+                        <i class="fa-solid fa-plus"></i>
+                    </a>
+                </div>
+            </div>
+
+            <div class="s-footer">
+                <a href="#">공지사항</a>
+                <a href="#">사이트맵</a>
+                <a href="#">이용약관</a>
+                <a href="#">전자공고</a>
+                <a href="#">개인정보처리방침</a>
+                <a href="#">영상정보처리기기 운영·관리 방침</a>
+            </div>
+
+            <div class="family-mb">
+                <p>FAMILY SITE</p>
+                <a href="#">INTERNATIONAL</a>
+                <a href="#">JAPAN</a>
+            </div>
+
+            <div class="t-footer">
+                <div>
+                    <div>
+                        <div>
+                            <span>(주)에뛰드 대표이사 : 이수연</span>
+                            <span>개인정보보호책임자 : 이수연</span>
+                            <span>사업자등록번호 : 135-81-05033</span>
+                            <span>주소 : 서울특별시 용산구 한강대로 100 (한강로 2가)</span>
+                        </div>
+                    </div>
+
+                    <span>© ETUDE CORPORATION. ALL RIGHTS RESERVED.</span>
+                </div>
+
+                <div class="contact">
+                    <div>
+                        <div>
+                            <span>고객문의 : 1544-5418</span>
+                            <span>제품문의 : 080-020-2285</span>
+                            <span>대표 이메일 : etude_master@etude.co.kr</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="sns">
+                <a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 38 38" fill="none"><path d="M37.8059 9.25993C37.6318 5.52358 35.9011 3.51414 35.3755 2.98718C32.4731 0 29.0768 0 19.0002 0C8.92049 0 5.52416 3.78426e-07 2.61868 2.99194C2.09775 3.51573 0.365542 5.52834 0.191371 9.25834C0.0488676 12.3519 -0.0303007 17.6786 0.0108669 19.0167C-0.0287173 20.3214 0.0488676 25.6481 0.191371 28.7417C0.365542 32.4732 2.09775 34.4859 2.62343 35.0144C5.52416 38 8.92049 38 19.0002 38C29.0784 38 32.4731 38 35.3802 35.0097C35.9011 34.4875 37.6318 32.478 37.8059 28.7417C37.9532 25.6608 38.0292 20.3293 37.9896 18.9849C38.0292 17.6723 37.9532 12.3423 37.8059 9.25993ZM19.0002 29.1543C13.3951 29.1543 8.83658 24.5831 8.83658 18.9659C8.83658 13.3471 13.3951 8.77741 19.0002 8.77741C24.6054 8.77741 29.1655 13.3471 29.1655 18.9659C29.1655 24.5847 24.6038 29.1543 19.0002 29.1543ZM30.1598 10.3742C28.7158 10.3742 27.5394 9.19644 27.5394 7.7473C27.5394 6.29974 28.7158 5.12201 30.1598 5.12201C31.6039 5.12201 32.7771 6.29974 32.7771 7.7473C32.7771 9.19644 31.6039 10.3742 30.1598 10.3742Z" fill="#777777"></path><path d="M18.9992 11C14.5875 11 11 14.5914 11 19.0008C11 23.4134 14.5859 27 18.9992 27C23.4093 27 27 23.4134 27 19.0008C27 14.5914 23.4093 11 18.9992 11Z" fill="#777777"></path></svg></a>
+                <a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 38 38" fill="none"><path d="M19.0127 0C8.49775 0 0 8.55632 0 19.0994C0 28.6976 7.02841 36.64 16.2323 38V24.88H11.2781V19.1599H16.2323V15.5983C16.2323 11.2907 17.5449 9.226 20.4598 7.88823C21.3196 7.49374 23.1024 7.08016 27.9569 7.59236V12.7064H24.434C23.1404 12.7064 22.0828 13.769 22.0828 15.0654V19.1583H27.7622L26.9578 24.8784H22.0828V37.9396C31.1093 36.4634 38 28.5974 38 19.0978C38 8.55632 29.5054 0 19.0127 0Z" fill="#777777"></path></svg></a>
+                <a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="27" height="19" viewBox="0 0 38 27" fill="none"><path d="M38 13.5C38 13.5 38 19.7751 37.2061 22.7833C36.7691 24.4421 35.4811 25.7491 33.8471 26.1925C30.8818 27 18.9973 27 18.9973 27C18.9973 27 7.1155 27 4.1515 26.1925C2.51614 25.7491 1.22957 24.4421 0.792571 22.7833C-4.85352e-07 19.7751 0 13.5 0 13.5C0 13.5 -4.85352e-07 7.22354 0.792571 4.2167C1.22957 2.55657 2.5175 1.24954 4.1515 0.807481C7.1155 -4.07879e-07 18.9973 0 18.9973 0C18.9973 0 30.8818 -4.07879e-07 33.8471 0.807481C35.4798 1.24954 36.7677 2.55657 37.2061 4.2167C38 7.22354 38 13.5 38 13.5ZM25.1804 13.073L15.2489 7.37546C15.0996 7.28923 14.9136 7.28923 14.7644 7.37682C14.6137 7.46442 14.5228 7.62865 14.5228 7.80383V19.1975C14.5228 19.3727 14.6137 19.5356 14.7644 19.6232C14.8404 19.6683 14.9245 19.6902 15.01 19.6902C15.0928 19.6902 15.1769 19.6697 15.2502 19.6259L25.1818 13.9284C25.3324 13.8408 25.4274 13.6766 25.4274 13.5014C25.4247 13.3221 25.3311 13.1606 25.1804 13.073Z" fill="#777777"></path></svg></a>
+                <a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="23" viewBox="0 0 38 44" fill="none"><path d="M27.7126 1.81627C27.6636 1.53293 27.6255 1.24778 27.5982 0.957174V0H20.0898V29.7995C20.0789 33.2722 17.2564 36.0857 13.7764 36.0857C12.7539 36.0857 11.7912 35.8405 10.9376 35.4118C8.87612 34.3729 7.46487 32.2406 7.46487 29.7777C7.46487 26.2941 10.2928 23.4698 13.7764 23.4698C14.4448 23.4698 15.0896 23.5716 15.6926 23.7623V17.8267V16.1357C15.066 16.0504 14.4357 16.0068 13.8 16.0068C6.17896 16.0068 0 22.1803 0 29.7977C0 34.5727 2.42835 38.7774 6.11538 41.2529L6.1172 41.2548C8.31307 42.7314 10.9557 43.5887 13.7982 43.5887C21.4175 43.5887 27.5964 37.4152 27.5964 29.7977V14.5719C30.5279 16.6661 34.1204 17.8975 38 17.8975V10.4381C36.0475 10.4436 34.1332 9.89504 32.4767 8.86158C30.012 7.32502 28.2357 4.78769 27.7126 1.81627Z" fill="#777777"></path></svg></a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
